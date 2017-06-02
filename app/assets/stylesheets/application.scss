@@ -1,0 +1,244 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ */
+
+@import "bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Century+Schoolbook");
+body
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight:300;
+	background-color: #F6F6F6;
+}
+.x
+{
+	margin: 7.5% 13.5% 2.5% 13.5%;
+}
+.navbar
+{
+	padding: 10px 12.5%;
+	border-bottom: .5px dashed #95989A;
+
+}
+.nav-link
+{
+	font-family: "Montserrat"
+}
+
+.no-tb-marg
+{
+	margin-top:0 ;
+	margin-bottom: 0;
+}
+.title
+{
+	font-family: 'Montserrat';
+	font-weight: 500 !important;
+	font-size:56px;
+}
+.subtitle
+{
+	font-size:18px;
+}
+.socialmedia
+{
+	padding-left: 10px;
+	height:21px;
+	
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+	-ms-transition:transform .5s;
+	-o-transition: transform .5s;
+	transition: transform .5s;
+}
+.socialmedia:hover
+{
+
+transform: translate(0, -5px);
+-webkit-tranform: translate(0, -5px);
+	-moz-tranform: translate(0, -5px);
+	-ms-tranform:translate(0, -5px);
+	-o-tranform: translate(0, -5px);
+
+}
+		
+.header
+{
+	font-size:21px;
+	font-family:"Century Schoolbook";
+	text-align: center;
+	color: #5B5B5B;
+}
+.line
+{
+	-webkit-box-flex:0;
+	-ms-flex: 0 0 ;
+	flex: 0 0 10%;
+	max-width: 10%;
+}
+hr{
+	border-width: 1	px;
+	border-color: #5B5B5B !important;
+
+}
+.aboutme
+{
+	font-size:28px;
+	font-family:"Century Schoolbook";
+	color: #5B5B5B;
+	padding: 25px 0;
+}
+.orange
+{
+	background-color: #FCAC82;
+	border: 0;
+}
+.orange-text
+{
+	color: #FCAC82 !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #FC8282;
+    color:white !important;
+
+}
+.btn-lg
+{
+	padding: 15px 30px;
+	border-radius: 15px;		
+}
+
+.ptitle{
+	font-size:42px;
+}
+.pdesc{
+	font-size:18px;
+	color: #5B5B5B;
+}
+.century
+{
+	font-family: 'Century Schoolbook';
+	font-size: 20px;
+}
+.bold {
+	font-weight: 400 !important;
+	font-size: 20px	;
+}
+a:hover, a:focus, a:active, a.active{
+	color: #FC8282 !important;
+}
+.grey
+{
+	background-color: #F6F6F6 !important;
+}
+.card
+{
+	margin-bottom: 35px;
+}
+.card-title
+{
+	font-size:24px;
+}
+.footer
+{
+	border-top: 1px dashed #95989A;
+}
+.fsub
+{
+	font-family: "Century Schoolbook";
+	text-align: center;
+}
+.fname
+{
+	font-family: "Montserrat";
+	font-weight: 500 !important;
+	font-size: 24px;
+	text-align: center;
+}
+.resume {
+    width: 130px;
+    margin: auto;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+	.img-responsive
+	{
+		height:250px;
+	}
+	.socialmedia
+	{
+	padding-left: 5.5px;
+	height:21px;
+	}
+	.pdesc
+	{
+		font-size: 22px;
+	}
+	.ptitle
+	{
+		font-size:28px;
+	}
+
+}
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+	.img-responsive
+	{
+		height:275px;
+	}
+	.socialmedia
+{
+	padding-left: 5.5px;
+	height:21px;
+}
+	.pdesc
+	{
+		font-size: 20px;
+	}
+	.ptitle
+	{
+		font-size:28px;
+	}
+
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+.img-responsive
+	{
+		height:360px;
+	}
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+/* Large screens ----------- */
+@media only screen  and (min-width : 765px) {
+	.navbar-nav
+	{
+		flex-direction: row;
+		
+	}
+	.nav-link
+	{
+		margin-right: 40px;
+		font-size:18px;
+		padding-left: 0
+	}
+}

@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 
 # ASSETS
-
+gem 'rails_serve_static_assets'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
 gem 'sprockets-rails'

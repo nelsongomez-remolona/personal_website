@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: personal_website_production
-  username: personal_website 
-  password: <%= ENV['PERSONAL_WEBSITE_DATABASE_PASSWORD'] %>
+ database: ENV['CLEARDB_DATABASE_URL']
+  username: ENV['CLEARDB_DATABASE_USERNAME']
+  password: ENV['CLEARDB_DATABASE_PASSWORDs']

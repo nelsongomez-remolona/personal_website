@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
- 	<nav class="navbar fixed-top navbar-light bg-faded">
+ 	<nav class="navbar fixed-top navbar-light bg-faded hide-xs">
 	  <ul class="navbar-nav mr-auto ">
 	      <li class="nav-item ">
 	       <%=  link_to "about me", root_path(anchor: 'aboutme'), class: "nav-link" %>
@@ -23,11 +23,21 @@
     </ul>
       <ul class="navbar-nav mr-auto right" style="margin-right:0 !important">
 	      <li class="nav-item ">
-	        <%= link_to "download resume", "nelson-gomez-resume2.pdf", class: "nav-link orange-text" %>
+           <%= link_to "Download Resume", "nelson-gomez-resume2.pdf", class: "btn btn-primary orange btn", style: 'border-radiu:30px'%>  
 	      </li>
     </ul>
 	</nav>
-  <body>
+  <nav class="show-xs fixed-top">
+        <div class="scrollmenu">
+           <%= link_to "download resume", "nelson-gomez-resume2.pdf", class: "nav-link orange-text" %>
+      <%=  link_to "about me", root_path(anchor: 'aboutme'), class: "nav-link" %>
+       <%=  link_to "portfolio",  root_path(anchor: 'portfolio'), class: "nav-link" %>
+      <%=  link_to "blog articles",  root_path(anchor: 'blogarticles'), class: "nav-link" %>
+
+
+    </div>
+  </nav>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <%= yield %>
   </body>

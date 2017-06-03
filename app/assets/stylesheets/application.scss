@@ -12,27 +12,34 @@
  */
 
 @import "bootstrap";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Century+Schoolbook");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Lora");
 body
 {
 
 	font-family: 'Montserrat', sans-serif;
-	font-weight:300;
-	background-color: #F6F6F6;
+	font-weight:400;
+	background-color: white;
+
 }
 .x
 {
-	margin: 7.5% 13.5% 2.5% 13.5%;
+	margin: 5% 13.5% 2.5% 13.5%;
+}
+.y{
+	text-align: center;
+	display: block!important;
+	margin-bottom: 0;
 }
 .navbar
 {
 	padding: 10px 12.5%;
-	border-bottom: .5px dashed #95989A;
+	background-color: white;
+		border-bottom: 1px dashed #95989A;
 
 }
 .nav-link
 {
-	font-family: "Montserrat"
+	font-family: "Lora"
 }
 
 .no-tb-marg
@@ -44,18 +51,25 @@ body
 {
 	font-family: 'Montserrat';
 	font-weight: 500 !important;
-	font-size:56px;
+	font-size:36px;
+	color:  #5B5B5B;;
 }
+.title2
+	{
+		font-size: 18px !important;
+		color:  #5B5B5B;;
+	}
 .subtitle
 {
-	font-size:18px;
+	font-size:16px;
+	font-family: 'Lora' !important;
 }
 .socialmedia
-{
-	padding-left: 10px;
+{	
+	padding-left: 0px;
 	height:21px;
-	margin-top:25px;
-	
+	padding-top:10px;
+	padding-right:25px !important;
 	-webkit-transition: transform .5s;
 	-moz-transition: transform .5s;
 	-ms-transition:transform .5s;
@@ -65,8 +79,8 @@ body
 .socialmedia:hover
 {
 
-transform: translate(0, -5px);
--webkit-tranform: translate(0, -5px);
+	transform: translate(0, -5px);
+	-webkit-tranform: translate(0, -5px);
 	-moz-tranform: translate(0, -5px);
 	-ms-tranform:translate(0, -5px);
 	-o-tranform: translate(0, -5px);
@@ -83,9 +97,18 @@ transform: translate(0, -5px);
 .header
 {
 	font-size:21px;
-	font-family:"Century Schoolbook";
+	font-family:"Lora";
 	text-align: center;
 	color: #5B5B5B;
+}
+.face
+{
+
+		height:200px !important;
+		width:200px !important;
+		border-radius: 100px;
+		margin-bottom:30px;
+		opacity:.8;
 }
 .line
 {
@@ -101,9 +124,8 @@ hr{
 }
 .aboutme
 {
-	font-size:28px;
-	font-family:"Century Schoolbook";
-	color: #5B5B5B;
+	font-size:18px;
+	color: #5B5B5B !important;
 	padding: 25px 0;
 }
 .br {
@@ -113,15 +135,15 @@ hr{
 }
 .orange
 {
-	background-color: #FCAC82;
+	background-color: #ff9393;
 	border: 0;
 }
 .orange-text
 {
-	color: #FCAC82 !important;
+	color: #ff9393 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    background-color: #FC8282;
+    background-color: #fC8282;
     color:white !important;
 
 }
@@ -133,6 +155,7 @@ hr{
 
 .ptitle{
 	font-size:42px;
+	color: #5B5B5B;
 }
 .pdesc{
 	font-size:18px;
@@ -140,7 +163,7 @@ hr{
 }
 .century
 {
-	font-family: 'Century Schoolbook';
+	font-family: 'Lora';
 	font-size: 20px;
 }
 .bold {
@@ -148,11 +171,11 @@ hr{
 	font-size: 20px	;
 }
 a:hover, a:focus, a:active, a.active{
-	color: #FC8282 !important;
+	color: #fC8282 !important;
 }
 .grey
 {
-	background-color: #F6F6F6 !important;
+	background-color: #f6f6f6 !important;
 }
 .card
 {
@@ -161,6 +184,7 @@ a:hover, a:focus, a:active, a.active{
 .card-title
 {
 	font-size:24px;
+	color: #5B5B5B;;
 }
 .footer
 {
@@ -168,7 +192,7 @@ a:hover, a:focus, a:active, a.active{
 }
 .fsub
 {
-	font-family: "Century Schoolbook";
+	font-family: "Lora";
 	text-align: center;
 }
 .fname
@@ -179,8 +203,10 @@ a:hover, a:focus, a:active, a.active{
 	text-align: center;
 }
 .resume {
-    width: 130px;
+	display: inline-block;
     margin: auto;
+    text-align: center;
+    width: 100%;
 }
 .email
 {
@@ -190,6 +216,23 @@ a:hover, a:focus, a:active, a.active{
 {
 	  display:none;
 	  visibility: hidden;
+}
+div.scrollmenu {
+    background-color:  #95989A;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 374px) {
 	.card{
@@ -216,11 +259,12 @@ a:hover, a:focus, a:active, a.active{
 	}
 	.x
 	{
-		margin: 25% 12.5% 5% 12.5%;
+		margin: 12.5% 12.5% 5% 12.5%;
 	}
 	.title{
 		font-size: 28px;
 	}
+
 	.subtitle
 	{
 		font-size: 16px !important;
@@ -234,11 +278,17 @@ a:hover, a:focus, a:active, a.active{
 		height:190px;
 		margin-bottom:30px;
 	}
+	.face
+	{
+		height:150px !important;
+		width:150px !important;
+	}
 	.socialmedia
 	{
-		padding-left: 5.5px;
+		padding-left: 0px;
 		height:21px;
 		margin-top:0;
+		padding-right: 10px;
 	}
 	.pdesc
 	{
@@ -255,7 +305,8 @@ a:hover, a:focus, a:active, a.active{
 	.nav-link
 	{
 		padding: 0;
-		font-size: 16px;
+		font-size: 14px;
+		color: #333;
 	}
 }
 /* Tablets (portrait and landscape) ----------- */
@@ -263,11 +314,19 @@ a:hover, a:focus, a:active, a.active{
 /* Styles */
 	.x
 	{
-		margin: 7.5%;
+		margin: 10.5%;
+	}
+	.z{
+	text-align: center;
+	display: block!important;
+	margin-bottom: 0;
+	}
+	.title{
+		text-align: center;
 	}
 	.navbar
 	{
-		padding: 10px 7.5%;
+		padding: 10px 10.5%;
 		border-bottom: .5px dashed #95989A;
 
 	}

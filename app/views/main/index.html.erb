@@ -1,10 +1,10 @@
 <div class="x">
 	<br id="aboutme">
-<div class="row" >
-	<div class="line"  style="paddin-left:0">
+<div class="row" style="margin:auto">
+	<div class="line offset-sm-3"  style="padding	-left:0">
 			<hr>
 	</div>
-	<div class=" col-5 col-sm-4 col-md-2" style="padding:0">
+	<div class=" col-5 col-sm-4 col-md-4" style="padding:0">
 			<p class="header" ><%= 'about me' %></p>
 	</div>
 	<div class="line" >
@@ -12,35 +12,48 @@
 	</div>
 </div>
 <br>
+
 <div class="row">
-	<div class="col-xs-12">
-	<h1 class="title"><%='Nelson Gomez - UX Researcher'%></h1>
-</div>
-</div>
-<div class="row">
-	<div class="col-xs-12">
-		<p class="no-tb-marg subtitle"><%= 'nelsonremolonagomez@gmail.com' %> </p>
+	<div class="col-lg-5">
+		<div class="row z">
+				<%= image_tag("face.png",  class: "img-responsive face") %> 
+		</div>
+		<div class="row z">
+			<h1 class="title"><%='Nelson Gomez'%></h1>
+		</div>
+		<div class="row z">
+			<h1 class="title title2"><%='Aspiring UX Specialist'%></h1>
+		</div>
+		<div class="row z">
+			<p class="no-tb-marg subtitle"><%= 'nelsonremolonagomez@gmail.com' %> </p>
+		</div>
+		<div class="row z">
+		
+				<p class="no-tb-marg subtitle"><%= '951-269-0566' %> </p>
+		</div>
+		<div class="row z">
+			<%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia', style:"padding-left:0" %>	
+			<%= link_to image_tag("twitter-social-outlined-logo.png") , "http://www.twitter.com/quinxed", class: 'socialmedia'  %>	
+			<%= link_to image_tag("linkedin-social-outline-logotype.png") , "http://www.linkedin.com/nelgomez", class: 'socialmedia'  %>
+			<%= link_to image_tag("medium.png") , "http://www.medium.com/nelgomez", class: 'socialmedia' %>
+		</div>
+		<div class="row z">
+			<%= link_to "Download Resume", "nelson-gomez-resume2.pdf", class: "btn btn-primary orange btn-lg", style:"margin-top: 30px;"%>
+		</div>
+	</div>
+	<div class="col-lg-7">
+		
+	<br>
+	<div class="row">
+		<p><%= "Whether it's a product, service, or design. I like waking up with problems to fix. Problems keep us going, thinking, and designing, and I love every second of it."%></p>
+		<p><%="With that passion, I joined User Experience Society as its Associate Director for User Research, and handled the research for our design intitiatives. Among them, I've also studied two organizations in my alma mater, Ateneo de Manila University, through a combination of UX and Marketing methods to help make the college experience of a population of eight thousand (8,000) students possible." %> </p>
+		<p><%="In the same sense, I take pride in how I've taught people on why good design and good understanding is important through tutorials and through articles (one of which was viewed 2,700 times with a read ratio of 43 percent).
+Coupled with project management experience and course work, I augment my systemic and design-oriented thinking with practical skills on proper resource-management and value in mind." %>
+"
+	</div>
 	</div>
 </div>
-<div class="row">
-	<div class="col-xs-12"
-			<p class="no-tb-marg subtitle"><%= '951-269-0566' %> </p>
-	</div>
-</div>
-<div class="row">
-<%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia', style:"padding-left:0" %>	
-<%= link_to image_tag("twitter-social-outlined-logo.png") , "http://www.twitter.com/quinxed", class: 'socialmedia'  %>	
-<%= link_to image_tag("linkedin-social-outline-logotype.png") , "http://www.linkedin.com/nelgomez", class: 'socialmedia'  %>
-<%= link_to image_tag("medium.png") , "http://www.medium.com/nelgomez", class: 'socialmedia' %>
-</div>
-<div class="row">
-	<div class="col-xs-12">
-		<p class="aboutme"> <%= 'As an advocate for user experience, I utilize design, research,   project management, and code to make technology socially-relevant and useful to people no matter the demographic.' %></p>
-	</div>
-</div>
-<div class="row">
-	<%= link_to "Download Resume", "nelson-gomez-resume2.pdf", class: "btn btn-primary orange btn-lg" %>
-</div>
+
 <br class=" br hidden-md-down">
 <br class=" br hidden-md-down">	
 <div id="portfolio" class="br">
@@ -190,31 +203,26 @@
 	  <br>
 	  <br>
 	  <div class="container">
-			<div class="row">
-				<div class="col-md-4 offset-md-4">
+			<div class="row y">
+
 					<h4 class= "fname"><%='Nelson Gomez'%></h4>
-				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 offset-md-4 col-lg-4  email2 ">
+			<div class="row y">
 					<p class="no-tb-marg fsub "><%= 'nelsonremolonagomez@gmail.com' %> </p>
-				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 offset-md-4">
+			<div class="row y">
+				
 						<p class="no-tb-marg fsub"><%= '951-269-0566' %> </p>
-				</div>
+		
 			</div>
-			<div class="row">
-				<div class="col-md-4 offset-md-4">	
+			<div class="row y">
 					<div class="resume">
 				        <%= link_to "download resume", "nelson-gomez-resume2.pdf", class: "fsub orange-text", style: "margin:auto" %>
 				    </div>
-				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 offset-md-4 socialmedia2" style="margin-top:5px">
-					<%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia socialmedia2' %>	
+					<%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia' %>	
 						
 					<%= link_to image_tag("twitter-social-outlined-logo.png") , "http://www.twitter.com/quinxed", class: 'socialmedia'  %>
 					<%= link_to image_tag("linkedin-social-outline-logotype.png") , "http://www.linkedin.com/nelgomez", class: 'socialmedia'  %>
@@ -225,4 +233,3 @@
 		<br>
 		<br>
 	</div>
-</div>

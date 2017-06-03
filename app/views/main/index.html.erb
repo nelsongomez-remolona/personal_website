@@ -1,10 +1,10 @@
 <div class="x">
 	<br id="aboutme">
 <div class="row" >
-	<div class="line"  style="padding-left:0">
+	<div class="line"  style="paddin-left:0">
 			<hr>
 	</div>
-	<div class="col-sm-2" style="padding:0">
+	<div class=" col-5 col-sm-4 col-md-2" style="padding:0">
 			<p class="header" ><%= 'about me' %></p>
 	</div>
 	<div class="line" >
@@ -13,37 +13,43 @@
 </div>
 <br>
 <div class="row">
+	<div class="col-xs-12">
 	<h1 class="title"><%='Nelson Gomez - UX Researcher'%></h1>
 </div>
+</div>
 <div class="row">
-
+	<div class="col-xs-12">
 		<p class="no-tb-marg subtitle"><%= 'nelsonremolonagomez@gmail.com' %> </p>
+	</div>
 </div>
 <div class="row">
+	<div class="col-xs-12"
 			<p class="no-tb-marg subtitle"><%= '951-269-0566' %> </p>
+	</div>
 </div>
-<div class="row" style="margin-top:25px">
+<div class="row">
 <%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia', style:"padding-left:0" %>	
 <%= link_to image_tag("twitter-social-outlined-logo.png") , "http://www.twitter.com/quinxed", class: 'socialmedia'  %>	
 <%= link_to image_tag("linkedin-social-outline-logotype.png") , "http://www.linkedin.com/nelgomez", class: 'socialmedia'  %>
 <%= link_to image_tag("medium.png") , "http://www.medium.com/nelgomez", class: 'socialmedia' %>
 </div>
 <div class="row">
-
+	<div class="col-xs-12">
 		<p class="aboutme"> <%= 'As an advocate for user experience, I utilize design, research,   project management, and code to make technology socially-relevant and useful to people no matter the demographic.' %></p>
+	</div>
 </div>
 <div class="row">
 	<%= link_to "Download Resume", "nelson-gomez-resume2.pdf", class: "btn btn-primary orange btn-lg" %>
 </div>
-<br>
-<br>	
-<br id="portfolio">	
-<br>	
+<br class=" br hidden-md-down">
+<br class=" br hidden-md-down">	
+<div id="portfolio" class="br">
+<br class="hide-xs">	
 <div class="row" >
-	<div class="line"  style="padding-left:0">
+<div class="line"  style="paddin-left:0">
 			<hr>
 	</div>
-	<div class="col-sm-2" style="padding:0">
+	<div class=" col-5 col-sm-4 col-md-2" style="padding:0">
 			<p class="header" ><%= 'portfolio' %></p>
 	</div>
 	<div class="line" >
@@ -51,10 +57,13 @@
 	</div>
 </div>
 <br>
-<br>
+<br class="hide-xs">
 <div class="portfolio">
 	<div class="row">
-		<div class="col-sm-5" style="padding-left:0">
+		<div class="col-12 col-md-6 offset-md-1 show-xs">
+			<%= image_tag("aisis.png",  class: "img-responsive") %> 
+		</div>
+		<div class="col-12 col-md-5" style="padding-left:0">
 			<h2 class="ptitle"><%= 'AISIS Redesign' %> </h2>
 			<p class="pdesc"><%= 'With my organization, User Experience Society, I helped understand how students felt about our alma maters enlistment system and suggested solutions.' %></p>
 		
@@ -62,19 +71,19 @@
 			<br>
 			<%= link_to "-see the case study-", root_path, class: "pdesc orange-text bold" %>
 		</div>
-		<div class="col-sm-6 offset-sm-1">
+		<div class="col-12 col-md-6 offset-md-1 hide-xs">
 			<%= image_tag("aisis.png",  class: "img-responsive") %> 
 		</div>
 	</div>
-	<br>
-	<br>
+	<br class="hide-xs">
+	<br class="hide-xs">
 	<br>
 	<br>
 	<div class="row">
-		<div class="col-sm-7  " >
+		<div class="col-12 col-md-7  " >
 			<%= image_tag("manly.png",  class: "img-responsive") %> 
 		</div>
-		<div class="col-sm-5 ">
+		<div class="col-12 col-md-5 ">
 			<h2 class="ptitle"><%= 'Manly Plastics CIMS' %> </h2>
 			<p class="pdesc"><%= 'As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation.' %></p>
 			<p class="pdesc century" style="margin-top: 30px"><%='project management | business analysis | interaction | hi-fi design | code' %> </p>
@@ -82,12 +91,15 @@
 			<%= link_to "-see the case study-", root_path, class: "pdesc orange-text bold" %>	
 		</div>
 	</div>
-	<br>
-	<br>
-	<br>
+	<br class="hide-xs">
+	<br class="hide-xs">
+	<br >
 	<br>
 	<div class="row">
-		<div class="col-sm-5" style="padding-left:0">
+		<div class="col-12 col-md-6 offset-md-1 show-xs">
+			<%= image_tag("burger king.png", class: "img-responsive ") %> 
+		</div>
+		<div class="col-12 col-md-5" style="padding-left:0">
 			<h2 class="ptitle"><%= 'Burger King Brand Analysis ' %> </h2>
 			<p class="pdesc"><%= 'Along with four others, I analyzed how Burger King was performing in the Filipino market, and gave recommendations for improvement to their managers.' %></p>
 		
@@ -95,32 +107,32 @@
 			<br>
 			<%= link_to "-see the case study-", root_path, class: "pdesc orange-text bold" %>
 			</div>
-		<div class="col-sm-6 offset-sm-1">
-			<%= image_tag("burger king.png", class: "img-responsive") %> 
+		<div class="col-12 col-md-6 offset-md-1 hide-xs">
+			<%= image_tag("burger king.png", class: "img-responsive ") %> 
 		</div>
 	</div>
 </div>
-<br>
-<br>	
+<br class="hide-xs">
+<br class="hide-xs">	
 <br>
 <br>	
 <div class="row" id="blogarticles">
-	<div class="line"  style="padding-left:0">
+	<div class="line"  style="paddin-left:0">
 			<hr>
 	</div>
-	<div class="col-sm-2" style="padding:0">
-			<p class="header" ><%= 'blog articles	' %></p>
+	<div class=" col-5 col-sm-4 col-md-2" style="padding:0">
+			<p class="header" ><%= 'blog articles' %></p>
 	</div>
 	<div class="line" >
 			<hr>
 	</div>
 </div>
 <br>
-<br>	
-<br>
+<br class="hide-xs">	
+<br class="hide-xs">
 <div class="blog articles">
 	<div class="row">
-		<div class="col-sm-12 col-md-6 col-lg-4" style="padding-left:0">
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
 				<%= image_tag("aisis2.jpeg", class: 'card-img-top') %> 
 			  <div class="card-block">
@@ -132,7 +144,7 @@
 			  </div>	
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4" style="padding-left:0">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
 				<%= image_tag("4.jpeg", class: 'card-img-top') %> 
 			  <div class="card-block">
@@ -144,7 +156,7 @@
 			  </div>	
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4" style="padding-left:0">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
 				<%= image_tag("3.jpeg", class: 'card-img-top') %> 
 			  <div class="card-block">
@@ -156,7 +168,7 @@
 			  </div>	
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4" style="padding-left:0">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
 				<%= image_tag("pm.jpeg", class: 'card-img-top') %> 
 			  <div class="card-block">
@@ -173,34 +185,35 @@
 
 
 </div>
+</div>
 <div class="footer">
 	  <br>
 	  <br>
 	  <div class="container">
 			<div class="row">
-				<div class="col-sm-4 offset-sm-4">
+				<div class="col-md-4 offset-md-4">
 					<h4 class= "fname"><%='Nelson Gomez'%></h4>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4 offset-sm-4">
-					<p class="no-tb-marg fsub"><%= 'nelsonremolonagomez@gmail.com' %> </p>
+				<div class="col-md-4 offset-md-4 col-lg-4  email2 ">
+					<p class="no-tb-marg fsub "><%= 'nelsonremolonagomez@gmail.com' %> </p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4 offset-sm-4">
+				<div class="col-md-4 offset-md-4">
 						<p class="no-tb-marg fsub"><%= '951-269-0566' %> </p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4 offset-sm-4">	
+				<div class="col-md-4 offset-md-4">	
 					<div class="resume">
 				        <%= link_to "download resume", "nelson-gomez-resume2.pdf", class: "fsub orange-text", style: "margin:auto" %>
 				    </div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-2 offset-sm-5 socialmedia2" style="margin-top:5px">
+				<div class="col-md-4 offset-md-4 socialmedia2" style="margin-top:5px">
 					<%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia socialmedia2' %>	
 						
 					<%= link_to image_tag("twitter-social-outlined-logo.png") , "http://www.twitter.com/quinxed", class: 'socialmedia'  %>
@@ -212,4 +225,4 @@
 		<br>
 		<br>
 	</div>
-
+</div>

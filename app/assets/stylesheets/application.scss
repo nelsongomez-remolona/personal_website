@@ -54,6 +54,7 @@ body
 {
 	padding-left: 10px;
 	height:21px;
+	margin-top:25px;
 	
 	-webkit-transition: transform .5s;
 	-moz-transition: transform .5s;
@@ -70,6 +71,13 @@ transform: translate(0, -5px);
 	-ms-tranform:translate(0, -5px);
 	-o-tranform: translate(0, -5px);
 
+}
+.socialmedia2
+{
+	display: flex;
+	justify-content: space-around;
+	display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around;
 }
 		
 .header
@@ -97,6 +105,11 @@ hr{
 	font-family:"Century Schoolbook";
 	color: #5B5B5B;
 	padding: 25px 0;
+}
+.br {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 40px !important;
 }
 .orange
 {
@@ -169,13 +182,57 @@ a:hover, a:focus, a:active, a.active{
     width: 130px;
     margin: auto;
 }
+.email
+{
+	font-size: 16px;
+}
+.show-xs
+{
+	  display:none;
+	  visibility: hidden;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 374px) {
+	.card{
+		width: 17rem !important;
+	}
+	.header
+	{
+		font-size: 18px;
+	}
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
+	.hide-xs
+	{
+		  display:none !important;
+		  visibility: hidden !important;
+	}
+	.show-xs
+	{
+		  display:block !important;
+		  visibility: visible;
+	}
+	.x
+	{
+		margin: 25% 12.5% 5% 12.5%;
+	}
+	.title{
+		font-size: 28px;
+	}
+	.subtitle
+	{
+		font-size: 16px !important;
+	}
+	.aboutme
+	{
+		font-size: 16px !important;
+	}
 	.img-responsive
 	{
-		height:250px;
+		height:190px;
+		margin-bottom:30px;
 	}
 	.socialmedia
 	{
@@ -184,24 +241,50 @@ a:hover, a:focus, a:active, a.active{
 	}
 	.pdesc
 	{
-		font-size: 22px;
+		font-size: 16px;
 	}
 	.ptitle
 	{
-		font-size:28px;
+		font-size:24px;
 	}
-
+	.email2
+	{
+		padding-left: 0 !important;
+	}
+	.nav-link
+	{
+		padding: 0;
+		font-size: 16px;
+	}
 }
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
+	.x
+	{
+		margin: 7.5%;
+	}
+	.navbar
+	{
+		padding: 10px 7.5%;
+		border-bottom: .5px dashed #95989A;
+
+	}
+	.nav-link
+	{
+		font-size: 16px !important;
+	}
+	.title{
+		font-size: 48px;
+	}
 	.img-responsive
 	{
-		height:275px;
+		height:250px;
 	}
 	.socialmedia
 {
 	padding-left: 5.5px;
+	margin-top:0;
 	height:21px;
 }
 	.pdesc

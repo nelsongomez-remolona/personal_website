@@ -218,7 +218,8 @@ a:hover, a:focus, a:active, a.active{
 	  visibility: hidden;
 }
 div.scrollmenu {
-    background-color:  #95989A;
+    background-color: white;
+		border-bottom: .5px dashed #95989A;	
     overflow: auto;
     white-space: nowrap;
 }

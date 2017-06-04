@@ -244,6 +244,23 @@ div.scrollmenu a {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
+	.z{
+	text-align: center;
+	display: block!important;
+	margin-bottom: 0;
+
+	}
+	.za{
+	text-align: center;
+	margin-bottom: 0;
+	padding-top: 12.5px !important;
+	display:flex !important;
+	}
+		.zad{
+	text-align: center;
+	margin-left:20%;
+
+	}
 	.hide-xs
 	{
 		  display:none !important;
@@ -305,7 +322,13 @@ div.scrollmenu a {
 		font-size: 14px;
 		color: #333;
 	}
+	.btn{
+
+		margin-top:18px !important;
+	}
+
 }
+
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */

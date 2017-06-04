@@ -12,7 +12,7 @@
  */
 
 @import "bootstrap";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Lora");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Montserrat:400i,700');
 @font-face {
   font-family: 'Hijrnotes';    
   src: url('/assets/Hijrnotes.ttf');
@@ -22,14 +22,14 @@
 body
 {
 
-	font-family: 'Montserrat', sans-serif;
-	font-weight:400;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
 	background-color: white;
 
 }
 .x
 {
-	margin: 5% 13.5% 2.5% 13.5%;
+	margin:7.5% 13.5% 2.5% 13.5%;
 }
 .y{
 	text-align: center;
@@ -45,7 +45,7 @@ body
 }
 .nav-link
 {
-	font-family: "Lora"
+	font-family: "Lato"
 }
 
 .no-tb-marg
@@ -56,7 +56,7 @@ body
 .title
 {
 	font-family: 'Montserrat';
-	font-weight: 500 !important;
+	font-weight: bold;
 	font-size:36px;
 	color:  #5B5B5B;;
 }
@@ -64,6 +64,9 @@ body
 	{
 		font-size: 18px !important;
 		color:  #5B5B5B;;
+		font-family: 'Lato';
+		font-style: normal;
+		letter-spacing: 1px;
 	}
 .title3
 {
@@ -73,14 +76,15 @@ body
 }
 .title4
 {
-	font-family: 'Lora' !important;
+	font-family: 'Lato' !important;
 	font-size:18px;
 	color:  #5B5B5B;;
 }
 .subtitle
 {
 	font-size:16px;
-	font-family: 'Lora' !important;
+	font-family: 'Lato' !important;
+	letter-spacing: 1px;
 }
 .socialmedia
 {	
@@ -116,7 +120,8 @@ body
 .header
 {
 	font-size:21px;
-	font-family:"Lora";
+	font-family:"Montserrat";
+	font-style: italic;
 	text-align: center;
 	color: #5B5B5B;
 }
@@ -145,7 +150,7 @@ hr{
 {
 	font-size:18px;
 	color: #5B5B5B !important;
-	padding: 25px 0;
+	font-family: 'Lato';
 }
 .br {
     margin-left: auto !important;
@@ -175,6 +180,7 @@ hr{
 .ptitle{
 	font-size:42px;
 	color: #5B5B5B;
+	font-family: 'Montserrat'
 }
 .pdesc{
 	font-size:18px;
@@ -182,7 +188,8 @@ hr{
 }
 .century
 {
-	font-family: 'Lora';
+	font-family: 'Lato';
+	font-style: italic;
 	font-size: 20px;
 }
 .bold {
@@ -200,10 +207,12 @@ a:hover, a:focus, a:active, a.active{
 {
 	margin-bottom: 35px;
 }
-.card-title
+.card-block h4
 {
-	font-size:24px;
-	color: #5B5B5B;;
+	font-size:21px;
+	color: #5B5B5B;
+	font-family: 'Montserrat';
+	font-weight:700;
 }
 .footer
 {

@@ -13,6 +13,12 @@
 
 @import "bootstrap";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Lora");
+@font-face {
+  font-family: 'Hijrnotes';    
+  src: url('/assets/Hijrnotes.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 body
 {
 
@@ -59,6 +65,18 @@ body
 		font-size: 18px !important;
 		color:  #5B5B5B;;
 	}
+.title3
+{
+	font-family: 'Hijrnotes' !important;
+	font-size:36px;
+	color:  #5B5B5B;;
+}
+.title4
+{
+	font-family: 'Lora' !important;
+	font-size:18px;
+	color:  #5B5B5B;;
+}
 .subtitle
 {
 	font-size:16px;

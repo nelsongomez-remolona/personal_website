@@ -238,7 +238,7 @@ a:hover, a:focus, a:active, a.active{
 }
 div.scrollmenu {
     background-color: white;
-		border-bottom: .5px dashed #95989A;	
+		border-bottom: 2px dashed #95989A;	
     overflow: auto;
     white-space: nowrap;
 }
@@ -310,6 +310,14 @@ div.scrollmenu a {
 	{
 		height:190px;
 		margin-bottom:30px;
+
+	}
+	.pscreen
+	{
+		margin-left: 12.5%;
+	}
+	.ace {
+		margin-top:40px;
 	}
 	.face
 	{
@@ -344,6 +352,7 @@ div.scrollmenu a {
 	.btn{
 
 		margin-top:28px !important;
+		border-radius: 30px;
 	}
 
 }

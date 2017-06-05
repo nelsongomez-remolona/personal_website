@@ -279,22 +279,32 @@ div.scrollmenu a {
 	.card{
 		width: 15rem !important;
 	}
+
 }
 @media only screen and (min-device-width : 360px) and (max-device-width : 375px) {
 	.header
 	{
 		font-size: 18px;
-	}
+	}	
 	.card{
 		width: 17.25rem !important;
+	}
+	.pscreen
+	{
+		padding-left: 20px;
 	}
 }
 @media only screen and (min-device-width : 375px) and (max-device-width : 390px) {
 	.card{
 		width: 17.5rem !important;
+
+	}
+	.pscreen
+	{
+		padding-left: 20px;
 	}
 }
-@media only screen and (min-device-width : 391px) and (max-device-width : 413px) {
+@media only screen and (min-device-width : 391px) and (max-device-width : 414px) {
 	.card{
 		width: 19rem !important;
 	}
@@ -304,7 +314,11 @@ div.scrollmenu a {
 	}
 	.pscreen
 	{
-		padding-left: 20px;
+		padding-left: 15px;
+	}
+	.img-responsive
+	{
+		height: 200px !important;
 	}
 
 }

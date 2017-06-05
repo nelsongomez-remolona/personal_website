@@ -368,16 +368,14 @@ div.scrollmenu a {
 	}
 	.img-responsive
 	{
-		height:190px;
+		height:165px;
 		margin-bottom:30px;
 
 	}
 	.pscreen
 	{
-		margin-left: 10%;
-	}
-	.ace {
-		margin-top:40px;
+		margin-left:5%;
+		margin-top:20px;
 	}
 	.face
 	{
@@ -409,10 +407,14 @@ div.scrollmenu a {
 		font-size: 12px;
 		color: #333;
 	}
-	.btn{
+	.btn-large{
 
 		margin-top:28px !important;
 		border-radius: 30px;
+	}
+	.header
+	{
+		margin-top:40px;
 	}
 
 }

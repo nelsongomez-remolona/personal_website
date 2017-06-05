@@ -479,6 +479,22 @@ div.scrollmenu a {
 	{
 		font-size:28px;
 	}
+	.card{
+		width:18rem !important;
+		margin-right:40px !important;
+	}
+
+}
+@media only screen and (min-width : 992px) and (max-device-width : 1024px){
+	.card{
+		width:16rem !important;
+		margin-right:40px !important;
+	}
+		.show-weird
+	{
+		display: inherit;
+		visibility:visible;
+	}
 
 }
 /* Desktops and laptops ----------- */
@@ -493,7 +509,7 @@ div.scrollmenu a {
 		padding-left: 0;
 	}
 	.card{
-		    width: 15rem !important;
+		    width: 16	rem !important;
     margin-right: 30px;
 	}
 	.card-text

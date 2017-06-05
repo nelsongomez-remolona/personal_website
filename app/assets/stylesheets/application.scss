@@ -220,7 +220,7 @@ a:hover, a:focus, a:active, a.active{
 }
 .fsub
 {
-	font-family: "Lora";
+	font-family: "Lato";
 	text-align: center;
 }
 .fname
@@ -259,13 +259,40 @@ div.scrollmenu a {
     text-decoration: none;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 374px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 359px) {
+	.header
+	{
+		font-size: 18px;
+	}
 	.card{
-		width: 17rem !important;
+		width: 15rem !important;
+	}
+}
+@media only screen and (min-device-width : 360px) and (max-device-width : 375px) {
+	.header
+	{
+		font-size: 18px;
+	}
+	.card{
+		width: 17.25rem !important;
+	}
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 390px) {
+	.card{
+		width: 17.5rem !important;
+	}
+}
+@media only screen and (min-device-width : 391px) and (max-device-width : 413px) {
+	.card{
+		width: 19rem !important;
 	}
 	.header
 	{
 		font-size: 18px;
+	}
+	.pscreen
+	{
+		padding-left: 20px;
 	}
 }
 
@@ -276,7 +303,10 @@ div.scrollmenu a {
 	text-align: center;
 	display: block!important;
 	margin-bottom: 0;
-
+	}
+	.center {
+	    display: block;
+	    margin: 0 auto;
 	}
 	.za{
 	text-align: center;
@@ -323,7 +353,7 @@ div.scrollmenu a {
 	}
 	.pscreen
 	{
-		margin-left: 12.5%;
+		margin-left: 10%;
 	}
 	.ace {
 		margin-top:40px;

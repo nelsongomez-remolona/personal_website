@@ -251,6 +251,12 @@ a:hover, a:focus, a:active, a.active{
 	  display:none;
 	  visibility: hidden;
 }
+	.show-weird
+	{
+		display: none;
+		visibility: hidden;
+	}
+
 div.scrollmenu {
     background-color: white;
 		border-bottom: 1px dashed #95989A;	
@@ -339,6 +345,14 @@ div.scrollmenu a {
 	.x
 	{
 		margin: 12.5% 12.5% 5% 12.5%;
+	}
+	.zb
+	{
+		margin-top:20px;
+	}
+	.zc
+	{
+		margin-left:20px;
 	}
 	.title{
 		font-size: 28px;
@@ -452,11 +466,41 @@ div.scrollmenu a {
 
 }
 /* Desktops and laptops ----------- */
+@media only screen and (min-width : 1025px) and (max-device-width : 1300px){
+/* Styles */
+.img-responsive
+	{
+		height:300px;
+	}
+	.zc
+	{
+		padding-left: 0;
+	}
+	.card{
+		    width: 15rem !important;
+    margin-right: 30px;
+	}
+	.card-text
+	{
+		font-size:18px;
+	}
+	.show-weird
+	{
+		display: inherit;
+		visibility:visible;
+	}
+
+}
+
 @media only screen  and (min-width : 1224px) {
 /* Styles */
 .img-responsive
 	{
 		height:360px;
+	}
+	.zc
+	{
+		padding-left: 0;
 	}
 
 }

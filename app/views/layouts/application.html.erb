@@ -10,7 +10,8 @@
   </head>
 
  	<nav class="navbar fixed-top navbar-light bg-faded hide-xs">
-	  <ul class="navbar-nav mr-auto ">
+     <%=  link_to image_tag("personal logo.png", class: 'logo'),  root_path(anchor: 'blogarticles'), class: "navbar-brand" %>
+	  <ul class="navbar-nav mr-auto" style="padding-left: 20px;">
 	      <li class="nav-item ">
 	       <%=  link_to "About Me", root_path(anchor: 'aboutme'), class: "nav-link" %>
 	      </li>

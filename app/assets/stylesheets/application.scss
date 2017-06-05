@@ -10,7 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  */
-
+/*IMPORTS*/
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Montserrat:400i,700');
 @font-face {
@@ -19,6 +19,26 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Comic Neue';    
+  src: url('/assets/ComicNeue-Angular_Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Comic Neue';    
+  src: url('/assets/ComicNeue-Angular_Bold_Oblique.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bodoni';    
+  src: url('/assets/BodoniDisplay-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+/*IMPORTS END*/
 body
 {
 
@@ -47,30 +67,36 @@ body
 {
 	font-family: "Lato"
 }
+.logo
+{
+	height: 36px;
+	width:36px;
+}
 
 .no-tb-marg
 {
 	margin-top:0 ;
 	margin-bottom: 0;
 }
+.no-b-marg
+{
+	margin-bottom: 0;
+}
 .title
 {
-	font-family: 'Montserrat';
+	font-family: 'Bodoni';
 	font-weight: bold;
-	font-size:36px;
-	color:  #5B5B5B;;
+	font-size:48px;
 }
 .title2
 	{
-		font-size: 18px !important;
-		color:  #5B5B5B;;
-		font-family: 'Lato';
-		font-style: normal;
-		letter-spacing: 1px;
+		font-size: 24px !important;
+		font-family: 'Comic Neue';
+		font-style: italic;
 	}
 .title3
 {
-	font-family: 'Hijrnotes' !important;
+	font-family: 'Comic Neue' !important;
 	font-size:36px;
 	color:  #5B5B5B;
 }
@@ -120,7 +146,7 @@ body
 .header
 {
 	font-size:21px;
-	font-family:"Montserrat";
+	font-family:"BodoniDisplay-BoldItalic";
 	font-style: italic;
 	text-align: center;
 	color: #5B5B5B;
@@ -131,7 +157,7 @@ body
 		height:200px !important;
 		width:200px !important;
 		border-radius: 100px;
-		margin-bottom:30px;
+		margin-bottom:15px;
 		opacity:.8;
 }
 .line
@@ -194,7 +220,7 @@ hr{
 }
 .century
 {
-	font-family: 'Lato';
+	font-family: 'Bodni';
 	font-style: italic;
 	font-size: 20px;
 }
@@ -231,7 +257,7 @@ a:hover, a:focus, a:active, a.active{
 }
 .fname
 {
-	font-family: "Montserrat";
+	font-family: "Bodoni";
 	font-weight: 500 !important;
 	font-size: 24px;
 	text-align: center;
@@ -495,9 +521,9 @@ div.scrollmenu a {
 		display: inherit;
 		visibility:visible;
 	}
-	.card-title
+	.card-text
 	{
-		font-size: 18px;
+		font-size: 18px !important;
 	}
 
 }
@@ -513,7 +539,7 @@ div.scrollmenu a {
 		padding-left: 0;
 	}
 	.card{
-		    width: 16	rem !important;
+		    width: 16rem !important;
     margin-right: 30px;
 	}
 	.card-text

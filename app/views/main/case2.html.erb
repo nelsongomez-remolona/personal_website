@@ -1,20 +1,186 @@
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <div class="x">
 <div class="row y">
-			<h1 class="title3"><%='Work in Progress'%></h1>
+			<h1 class="title3 orange-text"><%="Manly Plastic's CIMS"%></h1>
 </div>	
 <br>
 <div class="row y">
-			<h3 class="title4"><%='sorry, thank you for being patient!'%></h1>
+			<%= image_tag("manly.png", class: "big-img") %>
 </div>
 <br>
 <br>
+<div class="row z">
+			<p class="typical"><%= "Over the course of five months, my team sped up management level decision making for the company's marketing department by reducing the time to generate reports from the minimum three hours to an average of five seconds."  %>
+			</p>
+</div>
+<br>
+<div class="row ">
+		<div class="col-lg-4 col-sm-4 col-xs-12 " style="padding-left:0">
+			<h5 class="mini head">Team<h5>
+			<p class="typical list"><%= "Nelson Gomez"  %></p>
+			<p class="typical list"><%= "Rocelle Villareal"  %></p>
+			<p class="typical list"><%= "Tito Fraginal"  %></p>
+			<p class="typical list"><%= "Emmanuel Natividad"  %></p>
+			<p class="typical list"><%= "Jethro Turano"  %></p>
+		</div>
+		<div class=" col-lg-4 col-sm-4 col-xs-12 roles ">
+			<h5 class="mini head">My Roles<h5>
+			<p class="typical list"><%= "Project Manager"  %></p>
+			<p class="typical list"><%= "UX Designer"  %></p>
+			<p class="typical list"><%= "Front-end Web Developer"  %></p>
+			<p class="typical list"><%= "Systems Analyst"  %></p>
+		</div>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "The Problem" %> </h3> 
+</div>
+<div class=" row z">
+	<p class="typical"><%= "For our final academic requirement, we were contacted by Manly Plastics Inc.'s marketing and sales department and presented a full-scale project. They had a customer inquiry management system (CIMS) that had a lot of bugs, problems with report generation speed, and user retention rates with sales employees." %>
+	</p>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Project Definition" %> </h3> 
+</div>
+<div class=" row ">
+	<p class="typical"><%= "After interviewing relevant constituents, we started analyzing possible solutions to the problem. After understanding how the people of the company worked with the system, we set our goals, and our responsibilities as an IT provider 	using a scope document. Knowing that some of the potential users of the system were always out and about, we planned the system to be web-based so it could be accessed anywhere anytime." %>
+	</p>
+	<br>
+		<div class="col-lg-2 col-12 col-md-5 col-xs-12" style="padding-left:0	">
+		  <%= link_to "See Project Scope", "https://docs.google.com/document/d/1f7SCFKRSEVU1OBJFbb1A4pvHZvQWXkI4qT1zHCXw2Qs/edit?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
+		 </div>
+		 <div class="col-lg-2 col-md-6 col-12 col-xs-12 btna">
+		    <%= link_to "See Project Plan", "https://drive.google.com/file/d/0B_FrSfuPKli9SGxUN1VXX25sZDA/view?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
+		 </div>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Systems Analysis" %> </h3> 
+</div>
 <div class="row y">
-			<%= link_to 'Back', url_for(:back), class: "btn btn-primary orange btn-lg" %>
+			<%= image_tag("14_ERD.png", class: "erd-img") %>
+</div>
+<div class=" row z">
+	<p class="typical"><%= "After finishing the plans, we set out to analyze how our system should function given the old systems and the requirements and wishes of the client. Using multiple models like data flow diagrams, use cases, and entity-relationship models, we set the logical foundation of our system" %>
+	</p>
+	<br>
+		<div class="col-lg-3 col-6 col-md-4" style="padding-left:0	">
+		  <%= link_to "See Systems Analysis Document", "https://docs.google.com/document/d/1gDQ-k820aIbF8n6r0FtuBCnS9yf5OMw345u8ArAaPpw/edit?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
+		 </div>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Design Process and Decisions" %> </h3> 
+</div>
+
+<div class=" row z">
+	<p class="typical"><%= "Knowing the problems of the original system (mainly discoverability, and unusability due to bugs) and the needs of the management (faster reporting and accountability), we iteratively designed our solution. Our process included the standard wireframes, mockups, and getting user input. We did this just before we coded, and tested our system again and again." %>
+	</p>
+	<br>
+</div>
+
+<div class="row ">
+	<h5 class="mini head"><%= 'Navigation' %><h5>
+</div>
+<div class="row y">
+			<%= image_tag("manly2.png", class: "erd-img") %>
+</div>
+<div class="row z">
+		<p class="typical"><%= "With the old system, the employees cited that it was difficult to look for items, and that they had to go through at least four different pages before getting to the information that they want. That's why we made it easier to get to anywhere important the first time you enter the system. In less than two clicks, you can add a new inquiry, endorse (if you're a manager), check your inquiries, look for a specific inquiry or client, or even generate a report."  %>
+	</p>
+	<br>
+</div>
+<div class="row y">
+			<%= image_tag("manly3.png", class: "erd-img") %>
+</div>
+<div class="row z">
+		<p class="typical"><%= "More than that we also implemented a search function that can look for any client. This completely eliminated the need for the system to generate ALL clients in the page and the need for the employees to 'CTRL+F' the client. Just as to not induce a too drastic change, we also allowed them to sort through inquiries alphabetically. "  %>
+	</p>
+	<br>
+</div>
+<div class="row">
+	<h5 class="mini head"><%= 'Reports' %><h5>
+</div>
+<div class="row z">
+		<p class="typical"><%= "During interviews with the manager, it was cited that reports generated from their previous system took at least 3 hours and could last day because info was manually mined. In the new system, an employee can just choose a report type we have seven to choose from, and the system will generate it by itself. It will also allow the reports to be exported to a PDF file. "  %>
+	</p>
+	<br>
+</div>
+<div class="row">
+	<h5 class="mini head"><%= 'Texting System' %><h5>
+</div>
+<div class="row z">
+		<p class="typical"><%= "Since there wouldn't be any purpose for sales employees to use the system without prompt or incentive, we added a texting feature that allowed employees to be texted when an inquiry is assigned to them. Furthermore, we also added the function of texting the manager at the end of the day so that he could check if there were new inquiries to be endorsed."  %>
+	</p>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Project Closure and Future" %> </h3> 
+</div>
+
+<div class=" row z">
+	<p class="typical"><%= "With 8 out of the original 10 measures of success set during planning fulfilled, and with an average satisfaction rate of 4 out of 5 from all constituents, the project and systems are considered successes. As for future plans, the software and its database will get integrated into a mobile application to facilitate the requirements of the sales department." %>
+	</p>
+	<br>
+	<div class="col-lg-3 col-6 col-md-4" style="padding-left:0	">
+		  <%= link_to "See Final Documenation", "https://drive.google.com/file/d/0B_FrSfuPKli9cm40Ri1IQXF3SW8/view?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
+		 </div>
+</div>
+<br class="hide-xs">	
+<br class=" br hide-xs">
+<br class=" br hidden-md-down">	
+<div id="portfolio" class="br">
+<br class="hide-xs">	
+<div class="row za" style="margin:auto">
+	<div class="line offset-sm-3 zad"  style="padding-left:0">
+			<hr>
+	</div>
+	<div class=" col-5 col-sm-4 col-md-4" style="padding:0">
+			<p class="header" ><%= 'other works' %></p>
+	</div>
+	<div class="line" >
+			<hr>
+	</div>
+</div>
+<br class="show-xs">
+<br class="hide-xs">
+<br class="hide-xs">
+<div class="portfolio2">
+	<div class="row center">
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= image_tag("aisis3.png", class: 'card-img-top') %> 
+			  <div class="card-block">
+			    <h4>AISIS Redesign</h4>
+			    <br>
+			    <p class="card-text"><%= "With my organization, User Experience Society, I helped understand how students felt about our alma mater's enlistment system and suggested solutions." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
+			</div>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= image_tag("manly5.png", class: 'card-img-top') %> 
+			  <div class="card-block">
+			    <h4>Manly Plastics' CIMS</h4>
+			    <br>
+			    <p class="card-text"><%= "As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
+			</div>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= image_tag("burger king 2.png", class: 'card-img-top') %> 
+			  <div class="card-block">
+			    <h4>Burger King Brand Analysis</h4>
+			    <br>
+			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines, and gave recommendations for improvement to their managers." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
+			</div>
+		</div>
+	</div>	
+</div>
+
 </div>
 </div>

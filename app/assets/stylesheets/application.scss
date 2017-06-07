@@ -159,6 +159,9 @@ div.scrollmenu a {
 {
 	font-size: 16px;
 }
+.card{
+	height:515px;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 359px) {
 	.header
 	{
@@ -315,7 +318,6 @@ div.scrollmenu a {
 
 		margin-top:28px !important;
 		border-radius: 30px;
-		color:white !important;
 	}
 	.za
 	{
@@ -342,8 +344,13 @@ div.scrollmenu a {
 	.navbar
 	{
 		padding: 10px 10.5%;
-		border-bottom: .5px dashed #95989A;
+		height:35px;
 
+
+	}
+	.navbar-nav
+	{
+				border-bottom: .5px dashed #95989A;
 	}
 	.nav-link
 	{

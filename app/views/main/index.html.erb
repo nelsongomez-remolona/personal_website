@@ -1,11 +1,9 @@
 <div class="x">
-	<br id="aboutme">
-
 <br>
 
 <div class="row">
 	<div class="col-lg-5">
-		<div class="row z">
+		<div class="row z"><div id="aboutme" style="height:1px; width:1px;"></div>
 				<%= image_tag("face.png",  class: "img-responsive face") %> 
 		</div>
 		<div class="row z">
@@ -42,13 +40,15 @@
 
 	</div>
 	</div>
+	<div id="portfolio" style="height:1px; width:1px;">
 </div>
-<br class="hide-xs">	
+<br class="hide-xs"> 	
 <br class=" br hide-xs">
+</div>
 <br class=" br hidden-md-down">	
-<div id="portfolio" class="br">
+<div  class="br">
 <br class="hide-xs">	
-<div class="row za" style="margin:auto">
+<div class="row za"  style="margin:auto">
 	<div class="line offset-sm-3 zad"  style="padding-left:0">
 			<hr>
 	</div>
@@ -63,66 +63,51 @@
 <br class="hide-xs">
 <br class="hide-xs">
 <div class="portfolio">
-	<div class="row">
-		<div class="col-12 col-md-6 offset-md-1 show-xs">
-			<div class="row center">
-			<%= image_tag("aisis.png",  class: "img-responsive pscreen") %> 
+	<div class="row center">
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%> 
+			  <div class="card-block">
+			    <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
+			    <br>
+			    <p class="card-text"><%= "With my organization, User Experience Society, I helped understand how students felt about our alma mater's enlistment system and suggested solutions." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
 			</div>
 		</div>
-		<div class="col-12 col-md-5">
-			<h2 class="ptitle"><%= 'AISIS Redesign' %> </h2>
-			<p class="pdesc"><%= "With my organization, User Experience Society, I helped understand how students felt about our alma mater's enlistment system and suggested solutions." %></p>
-		
-			<p class="pdesc century" style="margin-top: 30px"><%='research | interaction | hi-fi design | medium article' %> </p>
-			<br>
-			<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost" %>
-		</div>
-		<div class="col-12 col-md-6 offset-md-1 hide-xs">
-			<%= image_tag("aisis.png",  class: "img-responsive") %> 
-		</div>
-	</div>
-	<br class="hide-xs">
-	<br class="hide-xs">
-	<br>
-	<br>
-	<div class="row">
-		<div class="col-12 col-md-7" >
-			<%= link_to image_tag("manly.png",  class: "img-responsive pscreen ace"), main_case2_path %> 
-		</div>
-		<div class="col-12 col-md-5 ">
-			<h2 class="ptitle"><%= "Manly Plastics' CIMS" %> </h2>
-			<p class="pdesc"><%= 'As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation.' %></p>
-			<p class="pdesc century" style="margin-top: 30px"><%='project management | business analysis | interaction | hi-fi design | code' %> </p>
-			<br>
-			<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost" %>	
-		</div>
-	</div>
-	<br class="hide-xs">
-	<br class="hide-xs">
-	<br>
-	<br>
-	<div class="row">
-		<div class="col-12 col-md-6 offset-md-1 show-xs ">
-			<%= image_tag("burger king.png", class: "img-responsive pscreen ") %> 
-		</div>
-		<div class="col-12 col-md-5">
-			<h2 class="ptitle"><%= 'Burger King Brand Analysis ' %> </h2>
-			<p class="pdesc"><%= 'Along with four others, I analyzed how Burger King was performing in the Filipino market, and gave recommendations for improvement to their managers.' %></p>
-		
-			<p class="pdesc century" style="margin-top: 30px"><%='marketing research | brand management' %> </p>
-			<br>
-			<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost" %>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= link_to image_tag("manly5.png", class: 'card-img-top'),  main_case2_path %> 
+			  <div class="card-block">
+			    <h4><%= link_to "Manly Plastics' CIMS", main_case2_path %></h4>
+			    <br>
+			    <p class="card-text"><%= "As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
 			</div>
-		<div class="col-12 col-md-6 offset-md-1 hide-xs">
-			<%= image_tag("burger king.png", class: "img-responsive ") %> 
 		</div>
-	</div>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= link_to image_tag("burger king 2.png", class: 'card-img-top'),main_case3_path %> 
+			  <div class="card-block">
+			    <h4><%= link_to "Manly Plastics' CIMS", main_case3_path %></h4>
+			    <br>
+			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines, and gave recommendations for improvement to their managers." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
+			</div>
+		</div>
+	</div>	
 </div>
+<div id="blogarticles" style="height:1px; width:1px;"></div>
 <br class="hide-xs">
 <br class="hide-xs">	
 <br>
 <br>	
-<div class="row za" style="margin:auto" id="blogarticles">
+<div class="row za" style="margin:auto">
 	<div class="line offset-sm-3 zad"  style="padding-left:0">
 			<hr>
 	</div>
@@ -133,16 +118,16 @@
 			<hr>
 	</div>
 </div>
-<br>
+<br
 <br class="hide-xs">	
 <br class="hide-xs">
-<div class="blog articles" id="blogarticles">
+<div class="blog articles">
 	<div class="row center">
 		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
-				<%= image_tag("aisis2.jpeg", class: 'card-img-top') %> 
+				<%= link_to image_tag("aisis2.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/why-aisis-desperately-needs-a-redesign-7529dc3b6b7b"%> 
 			  <div class="card-block">
-			    <h4>Why AISIS Desperately Needs A Redesign</h4>
+			    <h4><%= link_to "Why AISIS Desperately Needs A Redesign",  "https://blog.uxsociety.ph/why-aisis-desperately-needs-a-redesign-7529dc3b6b7b" %></h4>
 			    <br>
 			    <p class="card-text">And Why We Need to Reevaluate Our Perceptions of It</p>
 			    	    <br>
@@ -152,9 +137,9 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
-				<%= image_tag("4.jpeg", class: 'card-img-top') %> 
+				<%= link_to image_tag("4.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/leading-and-managing-with-usability-in-mind-a62b619c1dc4" %> 
 			  <div class="card-block">
-			    <h4 >Leading and Managing with Usability in Mind</h4>
+				    <h4><%= link_to "Leading and Managing with Usability in Mind",  "https://blog.uxsociety.ph/leading-and-managing-with-usability-in-mind-a62b619c1dc4" %></h4>
 			    <br>
 			    <p class="card-text">What’s the Best Way to Manage and Lead in the First Place?</p>
 			    	    <br>
@@ -164,9 +149,9 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
-				<%= image_tag("3.jpeg", class: 'card-img-top') %> 
+				<%= link_to image_tag("3.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945" %> 
 			  <div class="card-block">
-			    <h4 >UX Design Critique on TALAB and its Enlistment Process</h4>
+			    <h4 ><%= link_to "UX Design Critique on TALAB and its Enlistment Process", "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945" %> </h4>
 				<br class="show-weird">
 			    <p class="card-text">And Why Design Should Matter For the Atenean</p>
 			  			        	    <br>
@@ -176,9 +161,9 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
 			<div class="card" style="width: 20rem;">
-				<%= image_tag("pm.jpeg", class: 'card-img-top') %> 
+				<%= link_to image_tag("pm.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945" %> 
 			  <div class="card-block">
-			    <h4 >7 Ways You Can Improve as a Project Manager</h4>
+			    <h4 >	<%= link_to "7 Ways You Can Improve as a Project Manager", "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945" %> </h4>
 			    <br>
 			    <p class="card-text">What Can Possibly Go Wrong?</p>
 			        <br>	

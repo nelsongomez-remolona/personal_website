@@ -161,44 +161,38 @@ div.scrollmenu a {
 }
 .card-a{
 	height:515px;
+
 }
+.card{
+	margin: 0 auto !important;
+	float: none;
+	margin-bottom: 10px !important;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 359px) {
 	.header
 	{
 		font-size: 18px;
 	}
-	.card{
-		width: 100%;
-	}
-
 }
 @media only screen and (min-device-width : 360px) and (max-device-width : 375px) {
 	.header
 	{
 		font-size: 18px;
 	}	
-	.card{
-		width: 100%;
-	}
 	.pscreen
 	{
 		padding-left: 20px;
 	}
 }
 @media only screen and (min-device-width : 375px) and (max-device-width : 390px) {
-	.card{
-		width: 100%;
 
-	}
 	.pscreen
 	{
 		padding-left: 20px;
 	}
 }
 @media only screen and (min-device-width : 391px) and (max-device-width : 414px) {
-	.card{
-		width: 100%;
-	}
 	.header
 	{
 		font-size: 18px;
@@ -213,6 +207,22 @@ div.scrollmenu a {
 	}
 
 }
+@media only screen and (min-device-width : 449px) and (max-device-width : 480px) {
+	.header
+	{
+		font-size: 18px;
+	}
+	.pscreen
+	{
+		padding-left: 15px;
+	}
+	.img-responsive
+	{
+		height: 200px !important;
+	}
+
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

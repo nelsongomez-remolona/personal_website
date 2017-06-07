@@ -168,7 +168,7 @@ div.scrollmenu a {
 		font-size: 18px;
 	}
 	.card{
-		width: 15rem !important;
+		width: 100%;
 	}
 
 }
@@ -178,7 +178,7 @@ div.scrollmenu a {
 		font-size: 18px;
 	}	
 	.card{
-		width: 17.25rem !important;
+		width: 100%;
 	}
 	.pscreen
 	{
@@ -187,7 +187,7 @@ div.scrollmenu a {
 }
 @media only screen and (min-device-width : 375px) and (max-device-width : 390px) {
 	.card{
-		width: 17.5rem !important;
+		width: 100%;
 
 	}
 	.pscreen
@@ -197,7 +197,7 @@ div.scrollmenu a {
 }
 @media only screen and (min-device-width : 391px) and (max-device-width : 414px) {
 	.card{
-		width: 19rem !important;
+		width: 100%;
 	}
 	.header
 	{
@@ -261,7 +261,7 @@ div.scrollmenu a {
 	}
 	.title{
 		font-size: 28px;
-		font-family:'Bodoni';
+
 	}
 
 	.subtitle

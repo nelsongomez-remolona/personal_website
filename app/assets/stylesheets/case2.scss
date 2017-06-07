@@ -65,6 +65,9 @@
 	font-style: italic;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		.btn{
+			margin-bottom: 30px !important;
+		}
 		.roles
 	   {	
 	   	padding-left: 0;
@@ -116,6 +119,20 @@
 	   .as
 	   {
 	   	padding-right: 0;
+	   }
+	   .erd-img
+	   {
+	   	width: 100%;
+	   	margin-top: 0;
+	   }
+	   .big-img
+	   {
+	   	width: 100%;
+	   }
+	   .side
+	   {
+	   	margin-bottom: 0;
+
 	   }
 
 }

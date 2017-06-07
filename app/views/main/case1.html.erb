@@ -1,20 +1,246 @@
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <div class="x">
 <div class="row y">
-			<h1 class="title3"><%='Work in Progress'%></h1>
+			<h1 class="title3 orange-text"><%="AISIS Redesign"%></h1>
 </div>	
 <br>
 <div class="row y">
-			<h3 class="title4"><%='sorry, thank you for being patient!'%></h1>
+			<%= image_tag("aisis3.png", class: "big-img") %>
 </div>
 <br>
 <br>
+<div class="row z">
+			<p class="typical"><%= "I launched an article on our organization's blog and created an active discussion with the school community about the problems of our enlistment system. I got 2.7k views on the article (a quarter of the student population), and a 43% read rate. I also prepared a redesign of it with hopes of launching another article soon just in time for the first semester."  %>
+			</p>
+</div>
+<br>
+<div class="row ">
+		<div class="col-lg-4 col-sm-4 col-xs-12 " style="padding-left:0">
+			<h5 class="mini head">Team<h5>
+			<p class="typical list"><%= "Nelson Gomez"  %></p>
+			<p class="typical list"><%= "Alexis Collado"  %></p>
+			<p class="typical list"><%= "Brian Tan"  %></p>
+			<p class="typical list"><%= "Judy Sy"  %></p>
+		</div>
+		<div class=" col-lg-4 col-sm-4 col-xs-12 roles ">
+			<h5 class="mini head">My Roles<h5>
+			<p class="typical list"><%= "UX Researcher"  %></p>
+			<p class="typical list"><%= "UX Designer"  %></p>
+			<p class="typical list"><%= "Writer"  %></p>
+		</div>
+		<div class=" col-lg-4 col-sm-4 col-xs-12 roles ">
+			<h5 class="mini head">Research Methods<h5>
+			<p class="typical list"><%= "Interviews "  %></p>
+			<p class="typical list"><%= "Surveys"  %></p>
+			<p class="typical list"><%= "Observational Field Research"  %></p>
+			<p class="typical list"><%= "Usability Testing"  %></p>	
+		</div>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Context" %> </h3> 
+</div>
+<div class=" row z">
+	<p class="typical"><%= "Every semester, students in Ateneo de Manila University struggle as they enlist their classes in the Ateneo Integrated Student Information System (AISIS). With some functions like updating student information and confirming enlistment barring students from getting their preferred classes, I took it upon myself to figure out what exactly the student body felt about the system." %>
+	</p>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "A Preliminary Look Into the System" %> </h3> 
+</div>
 <div class="row y">
-			<%= link_to 'Back', url_for(:back), class: "btn btn-primary orange btn-lg" %>
+			<%= image_tag("oldaisis2.png", class: "erd-img") %>
+</div>
+<div class=" row " >
+	<p class="typical" style="margin-bottom:0"><%= "AISIS is a legacy system built around 2009 in order to mitigate the crowds of students manually registering for their classes in queues that took two whole days to process. It contains multiple services spanning form form requests, enlistment,  information dissemination. To most students, according to my interviews, it is only relevant during the start of the semester for enlisting in classes." %>
+	</p>
+	<br>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Research Process" %> </h3> 
+</div>
+<div class="row y">
+			<%= image_tag("aisis7.png", class: "erd-img") %>
+</div>
+<div class=" row z">
+	<p class="typical" style="margin-bottom:0"><%= "I initially scrawled down the questions I had for the research (i.e. Who's the persona? What's the persona like? When does s/he have problems with the system?). Afterwards, I structured my interviews and surveys, and scoped out who I could interview and which networks I could send my survey too. I eventually got 5 interviews and a sample of 135 respondents for my research. I interpreted the survey using spreadsheets, and gathered statistics." %>
+	</p>
+	<br>
+	<div class="col-lg-3 col-6 col-md-4" style="padding-left:0	">
+	  <%= link_to "See Actual Survey", "https://docs.google.com/forms/d/e/1FAIpQLSeDZVV1Y3RwzdSgSHKMzO0Z_x5pg5RVJUtkGzybqWkRvLp9uA/viewform", class: "btn btn-primary orange btn-ghost a" %>
+	 </div>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Key Findings" %> </h3> 
+</div>
+<div class=" row z">
+	<p class="typical" style="margin-bottom:5px"><%= "There’s apparently a lot to complain about in AISIS on the student end. Here are some that we got from our survey." %>
+	</p>
+	<br>
+</div>
+<div class="row ">
+		<div class="col-12 findings  ">
+			<p class="typical list space"><%= "30% of respondents had beef with the ‘Confirm Enlistment’ button."  %></p>
+			<p class="typical list space"><%= "38.5% of respondents believe that the ‘Update Student Information’ function AISIS has is a bad point, relating it to how inconvenient it is that you have to do it before you can even enlist."  %></p>
+			<p class="typical list space"><%= "12.5% of respondents complained that the font was too small, and that you could barely read them."  %></p>
+			<p class="typical list space"><%= "“It’s hard to check if the classes I want conflicted or not, especially if I don’t plan my class schedule ahead.”"  %></p>
+			<p class="typical list "><%= "“I find it so inconvenient that I have to use CTRL+F in order to find my classes, and it’s so pressuring if it’s one of those classes with slots that run out easy.”"  %></p>
+
+		</div>
+</div>
+<div class=" row z">
+	<p class="typical" style="margin-bottom:5px"><%= "Not to say that AISIS doesn't have its good points" %>
+	</p>
+	<br>
+</div>
+<div class="row ">
+		<div class="col-12 findings  ">
+			<p class="typical list space"><%= "60% of respondents think that the fact we can access it from any device is pretty nifty."  %></p>
+			<p class="typical list space"><%= "73.3% of respondents think that the ability to check if you have hold orders is a godsend.
+"  %></p>
+			<p class="typical list"><%= "70.4% of respondents also think that it’s cool that we can download our Load Revision and Change Degree Forms with all our information already on it."  %></p>
+
+
+		</div>
+</div>
+<div class=" row z" >
+	<p class="typical" style=""><%= "But eventually we found something that was confusing" %>
+	</p>
+	<br>
+</div>
+<div class="row"style="margin-bottom:30px;">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<%= image_tag("easy to use.png", class: "erd-img") %>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6	">
+			<%= image_tag("nothappy.png", class: "erd-img") %>
+	</div>
+</div>
+<div class=" row z">
+	<p class="typical" style=""><%= "In speculation, we hypothesized that, even though both statistics gathered sounded contradictory, it could be that the system has already conditioned the average student that its actually easy. There are worse fates out there, like having to manually register your classes in school, and knowing that, the student may think AISIS is actually pretty easy to use as is. " %>
+	</p>
+	<br>
+</div>
+<div class=" row z">
+	<p class="typical" style=""><%= "But even then, systems and technology were made to enhance the overall human experience, not hinder it, and as such we sought out to make it known to the whole community through an article. We also started trying to redesign how it could possibly look like." %>
+	</p>
+	<br>
+	<div class="col-lg-3 col-6 col-md-4" style="padding-left:0	">
+	  <%= link_to "See Article on Medium", "https://blog.uxsociety.ph/why-aisis-desperately-needs-a-redesign-7529dc3b6b7b", class: "btn btn-primary orange btn-ghost a" %>
+	 </div>
+</div>
+<div class="row ">
+
+	<h5 class="big head"><%= 'Design Process and Decisions' %><h5>
+
+</div>
+<div class="row z">
+		<p class="typical"><%= "Knowing the pain points users had with the system, and also knowing that AISIS focused on enlistment, we focused on improving that overall experience for the average student."  %>
+	</p>
+	<br>
+</div>
+<div class="row y">
+			<%= image_tag("aisis4.png", class: "erd-img") %>
+</div>
+<div class="row z">
+		<p class="typical"><%= "These screens will be the first thing students see when they press 'enlist.'  An overview is presented so that students can clearly see where they stand with their classes. Fonts were also enlarged to encourage readability, and  nstead of having to go through the inconvenience of updating student information (a requirement) immediately, the imagined solution involves just letting them enlist their classes."  %>
+	</p>
+	<br>
+</div>
+
+<div class="row y">
+			<%= image_tag("aisis5.png", class: "erd-img") %>
+</div>
+<div class="row z">
+		<p class="typical"><%= "After clicking on a class, the student is presented a list of classes, and a search bar. Searches can be done by professor, by time, and by room. Unlike the current system that requires that they 'confirm their classes' after selection, once a student clicks on a class here, they are automatically enlisted it with their slot secured. A student can also favorite classes PRIOR to the enlistment perios for easier lookup during the actual time period. "  %>
+	</p>
+	<br>
+</div>
+<div class="row y">
+			<%= image_tag("aisis6.png", class: "erd-img") %>
+</div>
+<div class="row z">
+		<p class="typical"><%= "Should a student desire to actually delist in a class, they would have to click the red delist button instead of being able to click the whole box present in the first few screens. Furthermore, the student will be prompted if he is sure of about his decision becasue its possible that his slot could be taken once he delists. Through this, we want to prevent accidental class delistment and student frustration."  %>
+	</p>
+	<br>
+</div>
+<div class="row">
+	<h5 class="mini head"><%= 'Other Recommendations' %><h5>
+</div>
+<div class="row z">
+		<p class="typical"><%= "From my interviews with the school administration, the problems of AISIS lie beyond in its process and interaction design. The fact remains that some of the problems are related to the maximum load of users the system can handle (which causes the batching system and the students' competitive approach to getting classes). Moreover, the system itself uses a legacy system which is hard to alter and tweak with. As such, we recommend that the school's admin should also invest in obtaining themselves stronger servers and possibly recreating the system with more modern software and languages"  %>
+	</p>
+	<br>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Future Plans" %> </h3> 
+</div>
+
+<div class=" row z">
+	<p class="typical"><%= "With the interest of the school community sparked through the article I made, I plan to cooperate with my old organization User Experience Society as they parter up with the school administration on what to do. After turning over the designs, I will be conducting critiques and assisting in their research in order to ensure satisfaction from the student community." %>
+	</p>
+	<br>
+	<div class="col-lg-3 col-6 col-md-4" style="padding-left:0	">
+		  <%= link_to "See Final Documenation", "https://drive.google.com/file/d/0B_FrSfuPKli9cm40Ri1IQXF3SW8/view?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
+		 </div>
+</div>
+<br class="hide-xs">	
+<br class=" br hide-xs">
+<br class=" br hidden-md-down">	
+<div id="portfolio" class="br">
+<br class="hide-xs">	
+<div class="row za" style="margin:auto">
+	<div class="line offset-sm-3 zad"  style="padding-left:0">
+			<hr>
+	</div>
+	<div class=" col-5 col-sm-4 col-md-4" style="padding:0">
+			<p class="header" ><%= 'other works' %></p>
+	</div>
+	<div class="line" >
+			<hr>
+	</div>
+</div>
+<br class="show-xs">
+<br class="hide-xs">
+<br class="hide-xs">
+<div class="portfolio2">
+	<div class="row center">
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= image_tag("aisis3.png", class: 'card-img-top') %> 
+			  <div class="card-block">
+			    <h4>AISIS Redesign</h4>
+			    <br>
+			    <p class="card-text"><%= "With my organization, User Experience Society, I helped understand how students felt about our alma mater's enlistment system and suggested solutions." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
+			</div>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= image_tag("manly5.png", class: 'card-img-top') %> 
+			  <div class="card-block">
+			    <h4>Manly Plastics' CIMS</h4>
+			    <br>
+			    <p class="card-text"><%= "As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
+			</div>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4" style="padding-left:0">
+			<div class="card" style="width: 20rem;">
+				<%= image_tag("burger king 2.png", class: 'card-img-top') %> 
+			  <div class="card-block">
+			    <h4>Burger King Brand Analysis</h4>
+			    <br>
+			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines, and gave recommendations for improvement to their managers." %></p>
+			    	    <br>
+			 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost" %>
+			  </div>	
+			</div>
+		</div>
+	</div>	
+</div>
+
 </div>
 </div>

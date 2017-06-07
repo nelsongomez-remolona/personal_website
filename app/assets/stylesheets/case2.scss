@@ -1,6 +1,6 @@
 .big-img
 {
-	width:75%;
+	width:100%;
 	height:auto;
 }
 .erd-img
@@ -42,6 +42,10 @@
 	margin-bottom:0;
 	font-size: 18px !important	;
 }
+.space
+{
+	margin-bottom:30px;
+}
 .title3
 {
 	font-family: 'Bodoni' !important;
@@ -49,6 +53,15 @@
 	color:  #5B5B5B;
 }
 	
+.findings
+{
+	border-left: 1px solid #95989A;
+	color: #535353;
+	padding-bottom:0;
+	margin: 30px auto;
+	font-size:16px !important;
+	font-style: italic;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 		.roles
 	   {	
@@ -85,6 +98,14 @@
 	   	margin-left: 0;
 	   	margin-top:0;
 	   	padding-left: 0
+	   }
+	   .btn-ghost{
+	   	margin-bottom:0;
+
+	   }
+	   .a
+	   {
+	   		margin-top: 5px;
 	   }
 
 }

@@ -14,7 +14,7 @@
 @import "bootstrap";
 @import "main";
 @import "case2";
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i, 700i|Montserrat:400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i, 700i, 700i|Montserrat:400i,700');
 @font-face {
   font-family: 'Bodoni';    
   src: url('/assets/BodoniDisplay-BoldItalic.otf');
@@ -266,7 +266,8 @@ div.scrollmenu a {
 	}
 	.aboutme
 	{
-		font-size: 16px !important;
+		font-size: 18px !important;
+		line-height:24px;
 	}
 	.img-responsive
 	{
@@ -314,6 +315,7 @@ div.scrollmenu a {
 
 		margin-top:28px !important;
 		border-radius: 30px;
+		color:white !important;
 	}
 	.za
 	{

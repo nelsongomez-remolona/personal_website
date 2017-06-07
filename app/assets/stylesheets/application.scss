@@ -43,7 +43,7 @@ body
 {
 	padding: 10px 12.5%;
 	background-color: white;
-		border-bottom: 1px dashed #95989A;
+	border-bottom: 1px dashed #95989A;
 
 }
 .nav-link
@@ -354,14 +354,15 @@ div.scrollmenu a {
 	}
 	.navbar
 	{
-		padding: 10px 10.5%;
+		padding: 30px 10.5% !important;
 		height:35px;
 
 
 	}
 	.navbar-nav
 	{
-				border-bottom: .5px dashed #95989A;
+			padding-top: 10px;
+			padding-bottom: 10px;
 	}
 	.nav-link
 	{

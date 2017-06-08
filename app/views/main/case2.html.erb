@@ -102,8 +102,13 @@
 </div>
 <div class="row z">
 		<p class="typical"><%= "During interviews with the manager, it was cited that reports generated from their previous system took at least 3 hours and could last day because info was manually mined. In the new system, an employee can just choose a report type we have seven to choose from, and the system will generate it by itself. It will also allow the reports to be exported to a PDF file. "  %>
-	</p>
+		</p>
+
 	<br>
+	<div class="col-lg-3 col-6 col-md-4" style="padding-left:0	">
+		  <%= link_to "See Report Samples", "https://drive.google.com/drive/folders/0B_FrSfuPKli9TTVvNnQwRzB1S2M?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
+		 </div>
+
 </div>
 <div class="row">
 	<h5 class="mini head"><%= 'Texting System' %><h5>
@@ -143,46 +148,44 @@
 <br class="show-xs">
 <br class="hide-xs">
 <br class="hide-xs">
-<div class="portfolio2">
+<div class="portfolio">
 	<div class="row center">
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4">
-			<div class="card" >
-				<%= image_tag("aisis3.png", class: 'card-img-top') %> 
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
+			<div class="card" 
+				<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%> 
 			  <div class="card-block">
-			    <h4>AISIS Redesign</h4>
+			    <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
 			    <br>
-			    <p class="card-text"><%= "With my organization, User Experience Society, I helped understand how students felt about our alma mater's enlistment system and suggested solutions." %></p>
+			    <p class="card-text"><%= "With my organization, User Experience Society, I researched how students felt about our alma mater's enlistment system and designed solutions for it." %></p>
 			    	    <br>
-			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost" %>
+			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important" %>
 			  </div>	
 			</div>
 		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4">
-			<div class="card" >
-				<%= image_tag("manly5.png", class: 'card-img-top') %> 
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
+			<div class="card" 
+				<%= link_to image_tag("manly5.png", class: 'card-img-top'),  main_case2_path %> 
 			  <div class="card-block">
-			    <h4>Manly Plastics' CIMS</h4>
+			    <h4><%= link_to "Manly Plastics' CIMS", main_case2_path %></h4>
 			    <br>
 			    <p class="card-text"><%= "As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation." %></p>
-			    	    <br>
-			 		<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost" %>
+			   
+			 		<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
 			  </div>	
 			</div>
 		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4">
-			<div class="card" >
-				<%= image_tag("burger king 2.png", class: 'card-img-top') %> 
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
+			<div class="card" 
+				<%= link_to image_tag("burger king 2.png", class: 'card-img-top'),main_case3_path %> 
 			  <div class="card-block">
-			    <h4>Burger King Brand Analysis</h4>
+			    <h4><%= link_to "Burger King Brand Analysis", main_case3_path %></h4>
 			    <br>
 			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines, and gave recommendations for improvement to their managers." %></p>
-			    	    <br>
-			 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost" %>
+			    	    	 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
 			  </div>	
 			</div>
 		</div>
 	</div>	
 </div>
-
 </div>
 </div>

@@ -230,7 +230,7 @@ div.scrollmenu a {
 	.aboutme
 	{
 		line-height:35px;
-		
+
 	}
 	.logo{
 		height:20px !important;
@@ -412,6 +412,10 @@ div.scrollmenu a {
 		width:16rem !important;
 		margin-right:40px !important;
 	}
+	.card h4
+	{
+		font-size:18px;
+	}
 		.show-weird
 	{
 		display: inherit;
@@ -419,11 +423,17 @@ div.scrollmenu a {
 	}
 	.card-text
 	{
-		font-size: 18px !important;
+		font-size: 16px !important;
 	}
+
+
 		.center
 	{
 		margin-left:20px;
+	}
+	.btna 
+	{
+		margin-left:100px;
 	}
 
 
@@ -479,6 +489,9 @@ div.scrollmenu a {
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
 /* Styles */
+	.x{
+		margin:7.5% 5% 2.5% 5%
+	}
 }
 /* Large screens ----------- */
 @media only screen  and (min-width : 765px) {

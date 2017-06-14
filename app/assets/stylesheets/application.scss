@@ -466,6 +466,14 @@ div.scrollmenu a {
 	{
 		margin-left:20px;
 	}
+	.z{
+	text-align: left !important;
+	display: flex !important;
+	margin-bottom: 0 !important;
+	}
+	.z h1 {
+		font-size:42px !important;
+	}
 
 }
 
@@ -487,8 +495,8 @@ div.scrollmenu a {
 	{
 		margin-left:100px;
 	}
-	.z{
-	text-align: left;
+		.z{
+	text-align: center;
 	display: block!important;
 	margin-bottom: 0;
 	}

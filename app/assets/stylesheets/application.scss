@@ -36,7 +36,7 @@ body
 }
 .y{
 	text-align: center;
-	display: block!important;
+	display: block !important;
 	margin-bottom: 0;
 }
 .navbar
@@ -407,7 +407,7 @@ div.scrollmenu a {
 	}
 
 }
-@media only screen and (min-width : 992px) and (max-device-width : 1024px){
+@media only screen and (min-width : 992px) and (max-device-width : 1023px){
 	.card{
 		width:16rem !important;
 		margin-right:40px !important;
@@ -439,7 +439,7 @@ div.scrollmenu a {
 
 }
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1025px) and (max-device-width : 1300px){
+@media only screen and (min-width : 1024px) and (max-device-width : 1300px){
 /* Styles */
 .img-responsive
 	{

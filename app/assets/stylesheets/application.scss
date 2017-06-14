@@ -15,6 +15,12 @@
 @import "main";
 @import "case2";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i, 700i, 700i|Montserrat:400i,700|Droid+Serif:700i');
+@font-face {
+  font-family: 'Bodoni';    
+  src: url('/assets/BodoniDisplay-BoldItalic.otf') format('otf');
+  font-weight: 700;
+  font-style: italic;
+}
 /*IMPORTS END*/
 body
 {

@@ -30,6 +30,12 @@
 			<p class="typical list"><%= "Front-end Web Developer"  %></p>
 			<p class="typical list"><%= "Systems Analyst"  %></p>
 		</div>
+		<div class=" col-lg-4 col-sm-4 col-xs-12 roles ">
+			<h5 class="mini head">Methods<h5>
+			<p class="typical list"><%= "Lean UX Project Management"  %></p>
+			<p class="typical list"><%= "Contextual Inquries"  %></p>
+			<p class="typical list"><%= "Reiterative User Testing"  %></p>
+		</div>
 </div>
 <div class="row">
 	<h3 class="big head"><%= "The Problem" %> </h3> 
@@ -39,19 +45,30 @@
 	</p>
 </div>
 <div class="row">
-	<h3 class="big head"><%= "Project Definition" %> </h3> 
+	<h3 class="big head"><%= "Lean Project Definition" %> </h3> 
+</div>
+<div class="row y">
+			<%= image_tag("manly6-01.png", class: "erd-img" , style:"width:100% !important;") %>
 </div>
 <div class=" row ">
-	<p class="typical"><%= "After interviewing relevant constituents, we started analyzing possible solutions to the problem. After understanding how the people of the company worked with the system, we set our goals, and our responsibilities as an IT provider 	using a scope document. Knowing that some of the potential users of the system were always out and about, we planned the system to be web-based so it could be accessed anywhere anytime." %>
+	<p class="typical"><%= " After understanding how the people of the company worked with the system, we set our personas, assumptions, and agreement with the client along with the scope of what we will be covering in the system. We constantly had to update our assumptions and features throughout the project." %>
 	</p>
 	<br>
-		<div class="col-lg-2 col-12 col-md-5 col-xs-12" style="padding-left:0	">
+		<div class="col-lg-2 col-12 col-md-12 col-xs-12" style="padding-left:0	">
 		  <%= link_to "See Project Scope", "https://drive.google.com/file/d/0B_FrSfuPKli9eTVINjlBdFJHQ0k/view?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
 		 </div>
-		 <div class="col-lg-2 col-md-6 col-12 col-xs-12 btna">
-		    <%= link_to "See Project Plan", "https://drive.google.com/file/d/0B_FrSfuPKli9SGxUN1VXX25sZDA/view?usp=sharing", class: "btn btn-primary orange btn-ghost a" %>
-		 </div>
+
 </div>
+<div class="row y">
+			<%= image_tag("manly6-02.png", class: "erd-img", style:"width:100% !important;") %>
+</div>
+<div class=" row ">
+	<p class="typical"><%= "Our assumptions changed over time, and we pursued different MVPs with each. We started out with redesigned forms with new processes, and eventually made reporting modules, and even a texting system to sate our user needs." %>
+	</p>
+	<br>
+
+</div>
+
 <div class="row">
 	<h3 class="big head"><%= "Systems Analysis" %> </h3> 
 </div>
@@ -59,7 +76,7 @@
 			<%= image_tag("14_ERD.png", class: "erd-img") %>
 </div>
 <div class=" row z">
-	<p class="typical"><%= "After finishing the plans, we set out to analyze how our system should function given the old systems and the requirements and wishes of the client. Using multiple models like data flow diagrams, use cases, and entity-relationship models, we set the logical foundation of our system" %>
+	<p class="typical"><%= "For each iteration, we had to keep updating all our data flows, use cases, and database structures. We eventually submitted a final reiteration of it to the client upon turnover." %>
 	</p>
 	<br>
 		<div class="col-lg-3 col-6 col-md-4" style="padding-left:0	">
@@ -149,38 +166,30 @@
 <br class="hide-xs">
 <br class="hide-xs">
 <div class="portfolio">
-	<div class="row center">
+		<div class="row center">
+			<div class="offset-lg-2" style="padding-left:0">
+		</div>
 		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card" 
+			<div class="card b"> 
 				<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%> 
 			  <div class="card-block">
 			    <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
-			    <br>
-			    <p class="card-text"><%= "With my organization, User Experience Society, I researched how students felt about our alma mater's enlistment system and designed solutions for it." %></p>
-			    	    <br>
-			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important" %>
+			    <p class="card-text" style ="font-style: italic"><%= "| interaction design | visual design | user research | market research |" %></p>
+
+			    <p class="card-text"><%= "With my organization, User Experience Society, I researched how students felt about our alma mater's enlistment system. I made an article about it and also a design recommendation." %></p>
+			    	   
+			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
 			  </div>	
 			</div>
 		</div>
 		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card" 
-				<%= link_to image_tag("manly5.png", class: 'card-img-top'),  main_case2_path %> 
-			  <div class="card-block">
-			    <h4><%= link_to "Manly Plastics' CIMS", main_case2_path %></h4>
-			    <br>
-			    <p class="card-text"><%= "As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation." %></p>
-			   
-			 		<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
-			  </div>	
-			</div>
-		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card" 
+			<div class="card b">
 				<%= link_to image_tag("burger king 2.png", class: 'card-img-top'),main_case3_path %> 
 			  <div class="card-block">
-			    <h4><%= link_to "Burger King Brand Analysis", main_case3_path %></h4>
-			    <br>
-			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines, and gave recommendations for improvement to their managers." %></p>
+			    <h4><%= link_to "Burger King Analysis", main_case3_path %></h4>
+			    <p class="card-text" style ="font-style: italic"><%= "| market research | brand management | consumer research | " %></p>
+	
+			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines as a brand and as a company. From there, my team gave suggestions for improvement to their managers." %></p>
 			    	    	 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
 			  </div>	
 			</div>

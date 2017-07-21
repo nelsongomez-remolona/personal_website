@@ -20,9 +20,9 @@
 				<p class="no-tb-marg subtitle"><%= '951-269-0566' %> </p>
 		</div>
 		<div class="row z zb">
-			<%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia zc'%>	
-			<%= link_to image_tag("linkedin-social-outline-logotype.png") , "https://www.linkedin.com/in/nelgomez/", class: 'socialmedia'  %>
-			<%= link_to image_tag("medium.png") , "http://www.medium.com/@nelgomez", class: 'socialmedia' %>
+			<%= link_to image_tag("facebook-logo-outline.png") , "http://www.facebook.com/nelgomez", class: 'socialmedia zc', style: '	padding-right:25px !important;'%>	
+			<%= link_to image_tag("linkedin-social-outline-logotype.png") , "https://www.linkedin.com/in/nelgomez/", class: 'socialmedia', style:'	padding-right:25px !important;' %>
+			<%= link_to image_tag("medium.png") , "http://www.medium.com/@nelgomez", class: 'socialmedia', style:'	padding-right:25px !important;'%>
 		</div>
 		<div class="row z">
 			<%= link_to "Download Resume", "https://drive.google.com/file/d/0B_FrSfuPKli9aVJYX0dGSGg0akU/view?usp=sharing", class: "btn btn-primary orange btn-lg", style:"margin-top: 40px; margin-bottom:0 !important;"%>
@@ -63,26 +63,33 @@
 <br class="hide-xs">
 <div class="portfolio">
 	<div class="row center">
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card" 
-				<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%> 
-			  <div class="card-block">
-			    <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
-			    <p class="card-text" style ="font-style: italic"><%= "| interaction design | visual design | user research | market research |" %></p>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
+			<div class="card">
 
+				<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%>
+			 <div class="card-header">
+			   <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
+			    <p class="card-text" style ="font-style: italic"><%= "| interaction design | user research | market research |" %></p>
+
+			 </div>
+			  <div class="card-block">
+			   
 			    <p class="card-text"><%= "With my organization, User Experience Society, I researched how students felt about our alma mater's enlistment system. I made an article about it and also a design recommendation." %></p>
 			    	   
 			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
 			  </div>	
 			</div>
 		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card" 
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
+			<div class="card">
 				<%= link_to image_tag("manly5.png", class: 'card-img-top'),  main_case2_path %> 
-			  <div class="card-block">
-			    <h4><%= link_to "Manly Plastics' CIMS", main_case2_path %></h4>
+			 <div class="card-header">
+			  	 <h4><%= link_to "Manly Plastics' CIMS", main_case2_path %></h4>
 
-			    <p class="card-text" style ="font-style: italic"><%= "| project management | lean ux  | interaction design | visual design | code |" %></p>
+			    <p class="card-text" style ="font-style: italic"><%= "| project management | lean ux  | interaction design | code |" %></p>
+			 </div>
+			  <div class="card-block">
+			   
 
 			    <p class="card-text"><%= "As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation." %></p>
 			   
@@ -90,15 +97,35 @@
 			  </div>	
 			</div>
 		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card" 
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
+			<div class="card">
 				<%= link_to image_tag("burger king 2.png", class: 'card-img-top'),main_case3_path %> 
+			  <div class="card-header">
+			  	   <h4><%= link_to "Burger King Analysis", main_case3_path %></h4>
+			    <p class="card-text" style ="font-style: italic"><%= "| market research | brand management | project management | " %>
+		    	</p>
+			 </div>
 			  <div class="card-block">
-			    <h4><%= link_to "Burger King Analysis", main_case3_path %></h4>
-			    <p class="card-text" style ="font-style: italic"><%= "| market research | brand management | project management | " %></p>
-	
-			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines as a brand and as a company. From there, my team gave suggestions for improvement to their managers." %></p>
+			 
+			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines as a brand and as a company. From there, we suggested improvements to their managers." %></p>
 			    	    	 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
+			  </div>	
+			</div>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
+			<div class="card">
+				<%= link_to image_tag("trace-00.png", class: 'card-img-top'), main_case4_path%> 
+			  <div class="card-header">
+			  	   <h4><%= link_to "Trace, a Habit Tracker", main_case4_path %></h4>
+			    <p class="card-text" style ="font-style: italic"><%= "| app development | lean ux methodologies | ongoing project | " %>
+		    	</p>
+			 </div>
+			  <div class="card-block">
+		
+			    <p class="card-text">   <%= "A personal passion project, Trace is a habit tracker inspired by bullet journalling. Currently in its few iterations, it hopes to assist in meeting personal goals for young proffesionals. " %></p>
+			 
+			    	   
+			 		<%= link_to "See the Case Study", main_case4_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
 			  </div>	
 			</div>
 		</div>
@@ -128,11 +155,11 @@
 		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
 			<div class="card">
 				<%= link_to image_tag("aisis2.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/why-aisis-desperately-needs-a-redesign-7529dc3b6b7b",   target: :_blank%> 
+			  <div class="card-header">
+			  	     <h4><%= link_to "Why AISIS Desperately Needs A Redesign",  "https://blog.uxsociety.ph/why-aisis-desperately-needs-a-redesign-7529dc3b6b7b",  target: :_blank %></h4>
+			 </div>
 			  <div class="card-block">
-			    <h4><%= link_to "Why AISIS Desperately Needs A Redesign",  "https://blog.uxsociety.ph/why-aisis-desperately-needs-a-redesign-7529dc3b6b7b",  target: :_blank %></h4>
-			    <br>
 			    <p class="card-text">And Why We Need to Reevaluate Our Perceptions of It</p>
-			    	    <br>
 			    <%= link_to "Read More", "https://blog.uxsociety.ph/why-aisis-desperately-needs-a-redesign-7529dc3b6b7b", class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important",   target: :_blank %>
 			  </div>	
 			</div>
@@ -140,39 +167,41 @@
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
 			<div class="card" >
 				<%= link_to image_tag("4.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/leading-and-managing-with-usability-in-mind-a62b619c1dc4",  target: :_blank %> 
-			  <div class="card-block">
+			  <div class="card-header">
 				    <h4><%= link_to "Leading and Managing with Usability in Mind",  "https://blog.uxsociety.ph/leading-and-managing-with-usability-in-mind-a62b619c1dc4",  target: :_blank %></h4>
-			    <br>
-			    <p class="card-text">What’s the Best Way to Manage and Lead in the First Place?</p>
-			    	    <br>
-			    <%= link_to "Read More", "https://blog.uxsociety.ph/leading-and-managing-with-usability-in-mind-a62b619c1dc4", class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important",   target: :_blank%>
-			  </div>	
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 as" style="padding-left:0">
-			<div class="card">
-				<%= link_to image_tag("3.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945",   target: :_blank %> 
+		
+			 </div>
 			  <div class="card-block">
-			    <h4 ><%= link_to "UX Design Critique on TALAB and its Enlistment Process", "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945",  target: :_blank %> </h4>
-				<br class="show-weird">
-			    <p class="card-text">And Why Design Should Matter For the Atenean</p>
-			  			        	    <br>
-			    <%= link_to "Read More", "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945", class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important",   target: :_blank %>
+			    <p class="card-text">What’s the Best Way to Manage and Lead in the First Place?</p>
+			    <%= link_to "Read More", "https://blog.uxsociety.ph/leading-and-managing-with-usability-in-mind-a62b619c1dc4", class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important",   target: :_blank%>
 			  </div>	
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
 			<div class="card">
 				<%= link_to image_tag("pm.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945" %> 
-			  <div class="card-block">
+			  <div class="card-header">
 			    <h4 >	<%= link_to "7 Ways You Can Improve as a Project Manager", "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945" %> </h4>
-			    <br>
-			    <p class="card-text">What Can Possibly Go Wrong?</p>
-			        <br>	
+   			 </div>
+			  <div class="card-block">
+			    <p class="card-text">What Can Possibly Go Wrong in a Project?</p>
 			    <%= link_to "Read More", "https://blog.uxsociety.ph/7-ways-you-can-improve-as-a-project-manager-e5f9abc690a8", class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important",  target: :_blank%>
 			  </div>	
 			</div>
 		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 as" style="padding-left:0">
+			<div class="card">
+				<%= link_to image_tag("3.jpeg", class: 'card-img-top'), "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945",   target: :_blank %> 
+		   	  <div class="card-header">
+			    <h4 ><%= link_to "UX Design Critique on TALAB and its Enlistment Process", "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945",  target: :_blank %> </h4>
+   			 </div>
+			  <div class="card-block">
+			    <p class="card-text">And Why Design Should Matter For the Atenean</p>
+			    <%= link_to "Read More", "https://blog.uxsociety.ph/ux-design-critique-on-talab-and-its-enlistment-process-4680157e6945", class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important",   target: :_blank %>
+			  </div>	
+			</div>
+		</div>
+	
 	</div>
 </div>
 

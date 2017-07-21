@@ -1,7 +1,7 @@
 <br>
 <div class="x">
 <div class="row y">
-			<h1 class="title3 orange-text"><%="Manly Plastics' CIMS"%></h1>
+			<h1 class="title3 pink-text"><%="Manly Plastics' CIMS"%></h1>
 </div>	
 <br>
 <div class="row y">
@@ -166,33 +166,56 @@
 <br class="hide-xs">
 <br class="hide-xs">
 <div class="portfolio">
-		<div class="row center">
-			<div class="offset-lg-2" style="padding-left:0">
-		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card b"> 
-				<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%> 
-			  <div class="card-block">
-			    <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
-			    <p class="card-text" style ="font-style: italic"><%= "| interaction design | visual design | user research | market research |" %></p>
+<div class="row center">
+			<div class="col-xs-12  col-sm-6 col-md-4 col-lg-4 as " style="padding-left:0">
+				<div class="card">
 
-			    <p class="card-text"><%= "With my organization, User Experience Society, I researched how students felt about our alma mater's enlistment system. I made an article about it and also a design recommendation." %></p>
+					<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%>
+				 <div class="card-header">
+				   <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
+				    <p class="card-text" style ="font-style: italic"><%= "| interaction design | user research | market research |" %></p>
+
+				 </div>
+				  <div class="card-block">
+				   
+				    <p class="card-text"><%= "With my organization, User Experience Society, I researched how students felt about our alma mater's enlistment system. I made an article about it and also a design recommendation." %></p>
+				    	   
+				 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
+				  </div>	
+				</div>
+			</div>
+			<div class="col-xs-12  col-sm-6 col-md-4 col-lg-4 as " style="padding-left:0">
+				<div class="card">
+					<%= link_to image_tag("burger king 2.png", class: 'card-img-top'),main_case3_path %> 
+				  <div class="card-header">
+				  	   <h4><%= link_to "Burger King Analysis", main_case3_path %></h4>
+				    <p class="card-text" style ="font-style: italic"><%= "| market research | brand management | project management | " %>
+			    	</p>
+				 </div>
+				  <div class="card-block">
+				 
+				    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines as a brand and as a company. From there, we provided a few suggested improvements to their managers." %></p>
+				    	    	 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
+				  </div>	
+				</div>
+			</div>
+				<div class="col-xs-12  col-sm-6 col-md-4 col-lg-4 as " style="padding-left:0">
+			<div class="card">
+				<%= link_to image_tag("trace-00.png", class: 'card-img-top'), main_case4_path%> 
+			  <div class="card-header">
+			  	   <h4><%= link_to "Trace, a Habit Tracker", main_case4_path %></h4>
+			    <p class="card-text" style ="font-style: italic"><%= "| app development | lean ux methodologies | ongoing project | " %>
+		    	</p>
+			 </div>
+			  <div class="card-block">
+		
+			    <p class="card-text">   <%= "A personal passion project, Trace is a habit tracker inspired by bullet journalling. Currently in its few iterations, it hopes to assist in meeting personal goals for young proffesionals. " %></p>
+			 
 			    	   
-			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
+			 		<%= link_to "See the Case Study", main_case4_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
 			  </div>	
 			</div>
 		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-4 as " style="padding-left:0">
-			<div class="card b">
-				<%= link_to image_tag("burger king 2.png", class: 'card-img-top'),main_case3_path %> 
-			  <div class="card-block">
-			    <h4><%= link_to "Burger King Analysis", main_case3_path %></h4>
-			    <p class="card-text" style ="font-style: italic"><%= "| market research | brand management | consumer research | " %></p>
-	
-			    <p class="card-text"><%= "Along with four others, I analyzed how Burger King was performing in the Philippines as a brand and as a company. From there, my team gave suggestions for improvement to their managers." %></p>
-			    	    	 		<%= link_to "See the Case Study", main_case3_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
-			  </div>	
-			</div>
 		</div>
 	</div>	
 </div>

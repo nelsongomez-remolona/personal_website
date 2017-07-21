@@ -1,4 +1,4 @@
-/*
+	/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -86,7 +86,7 @@ body
 	background-color: #ff9393;
 	border: 0;
 }
-.orange-text
+.pink-text
 {
 	color: #ff9393 !important;
 }
@@ -129,7 +129,7 @@ div.scrollmenu {
 div.scrollmenu a {
     display: inline-block;
     text-align: center;
-    padding: 14px;
+    padding: 15px;
     text-decoration: none;
 }
 
@@ -402,7 +402,6 @@ div.scrollmenu a {
 		font-size:28px;
 	}
 	.card{
-		width:18rem !important;
 		margin-right:40px !important;
 	}
 
@@ -451,7 +450,6 @@ div.scrollmenu a {
 		padding-left: 0;
 	}
 	.card{
-		    width: 16rem !important;
     margin-right: 30px;
 	}
 	.card-text

@@ -34,6 +34,7 @@ body
 {
 	margin:7.5% 13.5% 2.5% 13.5%;
 }
+
 .y{
 	text-align: center;
 	display: block !important;
@@ -531,6 +532,14 @@ div.scrollmenu a {
 	}
 
 }
+@media only screen and (min-width: 1024px)
+{
+	.cover>.x
+	{
+		margin:7.5% 20% 2.5% 20% !important;
+	}
+}
+
 
 
 /* Large screens ----------- */

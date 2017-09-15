@@ -40,6 +40,15 @@ body
 	display: block !important;
 	margin-bottom: 0;
 }
+.specialtieshead
+{
+	p{
+		letter-spacing: 10px;
+		text-align: center;
+		margin-top: 20px;
+
+	}
+}
 .navbar
 {
 	padding: 10px 12.5%;
@@ -55,6 +64,24 @@ body
 {
 	height: 36px;
 	width:36px;
+}
+.specialties
+{
+	display: flex;
+	margin: auto;
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+	-ms-transition:transform .5s;
+	-o-transition: transform .5s;
+	transition: transform .5s;
+}
+.specialties:hover
+{
+		transform: translate(0, -5px);
+	-webkit-tranform: translate(0, -5px);
+	-moz-tranform: translate(0, -5px);
+	-ms-tranform:translate(0, -5px);
+	-o-tranform: translate(0, -5px);
 }
 
 .no-tb-marg

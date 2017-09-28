@@ -573,17 +573,9 @@ div.scrollmenu a {
 @media only screen  and (min-width : 1824px) {
 /* Styles */
 	.x{
-		margin:7.5% 15% 2.5% 15%
+		margin:7.5% 15% 2.5% 15% !important;
 	}
-}
-/* Large screens ----------- */
-@media only screen  and (min-width : 765px) {
-	.navbar-nav
-	{
-		flex-direction: row;
-		
-	}
-	.aboutme {
+		.aboutme {
     font-size: 20px;
     color: #5B5B5B !important;
     font-family: 'Lato';
@@ -604,6 +596,15 @@ div.scrollmenu a {
     letter-spacing: 1px;
     color: #5B5B5B;
 	}
+}
+/* Large screens ----------- */
+@media only screen  and (min-width : 765px) {
+	.navbar-nav
+	{
+		flex-direction: row;
+		
+	}
+
 	.nav-link
 	{
 		margin-right: 40px;

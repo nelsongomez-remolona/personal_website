@@ -1,0 +1,66 @@
+
+<div class="b" style="">
+<br>
+
+<div id="myChart">
+</div>
+</div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.3.6/papaparse.min.js"></script>
+<script>
+ zingchart.render({
+    id: 'myChart',
+    data: {
+      type: 'bar',
+      "background-color":"transparent",
+      "title": {
+        "text":"Average Price of Items on Amazon",
+        "font-color":"#fff",
+        "font-size":"18px",
+        "font-family":"Droid Serif"
+        },
+    "subtitle": {
+          "text": "Limited to Items Sold in Greater NYC (2014)",
+          "font-color": "white",
+     
+    },
+      "legend":{
+            visible:false
+        },
+              plot:{
+            "background-color":"#ffbcbe",
+            "alpha": ".7",
+            "tooltip": {
+              "text": "Average Price of %kt: $ %v",
+              "alpha":".9",
+              visible: true,
+              "background-color":"#ad2d4d",
+              "border-color":"none",
+              "border-radius": "10px",
+              "font-size": "16px",
+              "padding": "10px 20px"
+            }
+              },
+       scaleY:{
+
+        item:{"font-color":"white", "font-size": "10px",},
+        "line-color":"white",
+         "zooming":true,
+        guide:{ visible:false},
+       
+
+       },
+       "scroll-x":{},
+       "scroll-y":{},
+       scaleX:{
+         "zooming":true,
+        "line-color":"#white",
+        item:{"font-color":"white", "font-size": "10px",},
+
+
+       },
+         "csv":{
+        "url":"/sheet1.csv"}
+  }});   
+</script>

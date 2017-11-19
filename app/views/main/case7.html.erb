@@ -33,26 +33,40 @@
 		</div>
 		<div class=" col-lg-4 col-sm-4 col-xs-12 roles ">
 			<h5 class="mini head">Methods<h5>
-			<p class="typical list"><%= "Lean UX Project Management"  %></p>
-			<p class="typical list"><%= "User Testing"  %></p>
+			<p class="typical list"><%= "Sketching"  %></p>
+			<p class="typical list"><%= "Wireframing"  %></p>
+			<p class="typical list"><%= "Mock-ups"  %></p>
+			<p class="typical list"><%= "Whiteboarding"  %></p>
 			<p class="typical list"><%= "Survey"  %></p>
+			<p class="typical list"><%= "Interviews"  %></p>
 		</div>
+</div>
+<div class=" row z">
+		<div class="col-lg-4 col-6 col-md-4" style="padding-left:0	">
+		  <%= link_to "See Prototype", "https://xd.adobe.com/view/8c6dd24b-ad89-441c-a712-7243cf0b5f0e", class: "btn btn-primary orange btn-ghost a" %>
+		 </div>
 </div>
 <div class="row">
 	<h3 class="big head"><%= "The Background" %> </h3> 
 </div>
 <div class=" row z">
-	<p class="typical"> <%= "Affiliated started out as an idea by Armon Battle while he was part of the baseball community in Chapman University. He along with his co-founders saw the parallels between their idea of 'family' in the team to the one held by people in Greek life. With that, he saw how countless amounts of students want to be part of something bigger themselves which henced inspired him to start a company that heavily dedicates itself to helping people get there. In this particular context, through helping Greek life. The company eventually partnered with Chapman's User Experience Society to provide the technical expertise for the project." %>
+	<p class="typical"> <%= "Affiliated, a startup owned by Armon Battle, contacted me and my team in User Experience Society to build the foundations of his application; a minimum viable product and a development plan. As this was my first project on a mobile platform, I was very much excited to get into the intricacies of developing cross-platform for iOS and Android.
+" %>
 	</p>	
 </div>
 <div class="row">
 	<h3 class="big head"><%= "The Why" %> </h3> 
 </div>
-<div class="row y">
-			<%= image_tag("affiliated-2-07.png", class: "erd-img" , style:"width:100% !important;") %>
+<div class="row ">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<%= image_tag("affiliated-2-08.png", class: "erd-img") %>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6	">
+			<%= image_tag("affiliated-2-09.png", class: "erd-img") %>
+	</div>
 </div>
 <div class=" row z">
-	<p class="typical"><%= "After the founders conducted extensive reviews, Affiliated sought to solve problems in a two-fold manner. It hopes to provide a way for Greek life members to still feel connected to their brotherhood/sisterhood even after graduation instead of feeling the abrupt end of their life in their respective fraternity or sorority. Moreover, Affiliated hopes to makes the asset management for the people running these organizations variably easier knowing that there are a lot and that it could be too complex to process efficiently for the average college student." %>
+	<p class="typical"><%= "After conducting their own independent preliminary research, Affiliated saw two possible opportunities. Armon and his team wanted to capitalize on the sense of belonging people feel upon joining a Greek Community (with a vast majority of people they surveyed expressing this as a common experience) and the sheer complexity of systems to keep everything running. As such, Affiliated seeks to makes an application that streamlines organizational processes and sustains the connection between members in and out of college." %>
 </div>
 <div class="row">
 	<h3 class="big head"><%= "The Who" %> </h3> 
@@ -61,12 +75,13 @@
 			<%= image_tag("affiliated-2-01.png", class: "erd-img" , style:"width:100% !important;") %>
 </div>
 <div class=" row ">
-	<p class="typical"><%= " After having a clear understanding of the goal that Affiliated wanted to achieve, we set out in talking and profiling the people involved in Greek Life. From this effort, we managed to get 6 personae (potential members/pledges, executive board, active members, alumni, uniersity admin). Due to a non-disclosure agreement, we're only allowed to show one of the personae: Ellie Briar, the executive board member." %>
+	<p class="typical"><%= "When we had a clear understanding of the goal that Affiliated wanted to achieve, we set out to define the personae that could be involved in the app using information from Armon and our own interviews. From this effort, we defined five potential key personae (potential members/pledges, executive board, active members, alumni, university admin). Due to a non-disclosure agreement, we're only allowed to show one of the personae: Ellie Briar, the executive board member.     
+" %>
 	</p>
 </div>
 
 <div class="row">
-	<h3 class="big head"><%= "User Flow and Wireframing" %> </h3> 
+	<h3 class="big head"><%= "User Flows, Ideation, and Feature Prioritization" %> </h3> 
 </div>
 <div class="row y">
 			<%= image_tag("affiliated-2-05.png", class: "erd-img", style: "width:50% !important") %>
@@ -80,9 +95,18 @@
 			<%= image_tag("affiliated-2-02.png", class: "erd-img") %>
 </div>
 <div class=" row z">
-	<p class="typical"><%= "After that, the whole team got together to whiteboard the whole process of interacting with the application. We critiqued our decisions based on a heuristic guideline and agreed on a user flow" %>
+	<p class="typical"><%= "After that, the whole team got together to whiteboard the whole process of interacting with the application. We critiqued our decisions based on heuristic guidelines and set out to determining the very core of this application. Some of the questions that we encountered in this process were:"  %>
 	</p>
 	<br>
+
+</div>
+<div class="row ">
+		<div class="col-12 findings  ">
+			<p class="typical list space">1. “How can we reinforce that sense of belonging for members in the application in and out of college?”</p>
+			<p class="typical list space">2. “How do we design a self-sustaining social ecosystem?” </p>
+			<p class="typical list space">3. “What internal processes do chapters think are the most difficult to sustain?” </p>
+			<p class="typical list">4. “How do we streamline the process of getting ‘points’ to go to events when there are different ways to get them (points rewarded via tasks, study hours, and service hours)?”. </p>
+		</div>
 </div>
 <br>
 <div class="row y">
@@ -90,7 +114,8 @@
 </div>
 <br>
 <div class=" row z">
-	<p class="typical"><%= "Afterwards, we revisted our work as we went about computerizing the overall flow into a design artifact that can be easily understood." %>
+	<p class="typical"><%= "Even with so many questions left unanswered, we decided to cut down our user flow to what’s, in actuality, relevant to our users. We set aside ideas like “putting your resume” and mentoring  in the application and focused on the basic experiential need that members of Greek organizations love; belonging.
+" %>
 	</p>
 	<br>
 </div>
@@ -98,7 +123,7 @@
 			<%= image_tag("affiliated-2-03.png", class: "wired-img") %>
 </div>
 <div class=" row z">
-	<p class="typical"><%= "From there we contextualized the flow to our personae and showed their likely thought process based on the interviews we conducted." %>
+	<p class="typical"><%= "From here we also contextualized the flow to our personae and showed their likely thought processes based on the information we have through interviews and prior research." %>
 	</p>
 	<br>
 </div>
@@ -110,21 +135,21 @@
 </div>
 
 <div class=" row z">
-	<p class="typical"><%= "After the flow was set, I set out to create high fidelity mock-ups of the application. We also collaborated with the founders to design the icons based on impressions of the brand being sleek, collaborative, and relatable." %>
+	<p class="typical"><%= "After the flow was set, I set out to create high fidelity mock-ups of the application. We also collaborated with the founders to design the icons to match the vibe of the application." %>
 	</p>
 	<br>
 		<br>
 		<br>
 </div>
 <div class="row y">
-	<iframe width="100%" height="480" src="https://xd.adobe.com/embed/8c6dd24b-ad89-441c-a712-7243cf0b5f0e" frameborder="0" allowfullscreen></iframe>
+	<iframe width="100%" height="480" src="https://xd.adobe.com/view/8c6dd24b-ad89-441c-a712-7243cf0b5f0e/" frameborder="0" allowfullscreen></iframe>
 </div>
 <div class="row">
 	<p class="mr-auto ml-auto" style="font-family: 'Lato'; font-style:italic"><%= "it's clickable" %> </p>
 	<br>
 </div>
 <div class=" row z">
-	<p class="typical"><%= "We then proceeded to make the prototype and conduct a few contextual inquiries with sorority and fraternity members. From those, we found out that the colors used in the app are important to some members as the colors they use in their greek organizations hold meaning and as such advised us to change it. Moreover, they expressed that they liked the idea of being able to create their own feeds and their own forums to be able to communicate with each other as it removes the need for multiple channels and Facebook pages for information. Lastly, they also commented that they liked the idea of being able to see what public events are happening around the university through the Events and AroundMe function."  %>
+	<p class="typical"><%= "Afterwards, we made a prototype and conducted a few contextual inquiries with sorority and fraternity members. Coming from different fraternities, "  %>
 	</p>
 	<br>
 </div>

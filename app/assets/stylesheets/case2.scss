@@ -118,6 +118,12 @@
 		.btn{
 			margin-bottom: 30px !important;
 		}
+		.invision
+		{
+			transform: scale(.5);
+			margin-top: -200px;
+			margin-bottom: -200px;
+		}	
 		.roles
 	   {	
 	   	padding-left: 0;
@@ -146,6 +152,11 @@
 	   	margin-top: 30px;
 	   }
 	   .mini
+	   {
+	   	font-size: 18px;
+	   	font-style: italic;
+	   }
+	    .mini2
 	   {
 	   	font-size: 18px;
 	   }

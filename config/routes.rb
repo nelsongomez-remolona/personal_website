@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'main/case6'
   get 'main/case7'
   get 'main/case8'
-  get 'main/zingchart'
+  get 'main/case9'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :main

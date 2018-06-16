@@ -34,6 +34,9 @@
 	      <li class="nav-item">
 	          <%=  link_to "Portfolio",  root_path(anchor: 'portfolio'), class: "nav-link" %>
 	      </li>
+        <li class="nav-item">
+            <%=  link_to "Illustrations",  root_path(anchor: 'illu'), class: "nav-link" %>
+        </li>
 	      <li class="nav-item">
 	          <%=  link_to "Blog Articles",  root_path(anchor: 'blogarticles'), class: "nav-link" %>
 	      </li>
@@ -50,6 +53,7 @@
            <%=  link_to image_tag("personal logo.png", class: 'logo'),  root_path, class: "navbar-brand" %>
            <%= link_to "download resume", "https://drive.google.com/file/d/0B_FrSfuPKli9aVJYX0dGSGg0akU/view?usp=sharing", class: "nav-link pink-text", style: "padding-left:0" %>
        <%=  link_to "portfolio",  root_path(anchor: 'portfolio'), class: "nav-link" %>
+       <%=  link_to "illustrations",  root_path(anchor: 'illu'), class: "nav-link" %>
       <%=  link_to "blog articles",  root_path(anchor: 'blogarticles'), class: "nav-link", onClick: "gaq_.push(‘_trackEvent’, ‘PDF Downloads’, ‘Click’, ‘Resume Views’)";%>
 
 

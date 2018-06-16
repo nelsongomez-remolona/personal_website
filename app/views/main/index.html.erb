@@ -41,15 +41,15 @@
 				<div class="specialtieshead">
 					<div class="row center">
 						<div class="col-xs-12  col-sm-6 col-md-4 col-lg-4  " style="padding-left:0">
-							<%= image_tag("IXD.png", class: 'specialties') %>
+							<%= link_to image_tag("IXD.png", class: 'specialties'), main_case9_path %>
 							<p>INTERACTION<br>DESIGN</p>
 						</div>
 						<div class="col-xs-12  col-sm-6 col-md-4 col-lg-4 " style="padding-left:0">
-							<%= image_tag("brain.png", class: 'specialties') %>
+							<%= link_to image_tag("brain.png", class: 'specialties'), main_case8_path %>
 							<p>USER<br>RESEARCH</p>
 						</div>
 						<div class="col-xs-12  col-sm-6 col-md-4 col-lg-4 " style="padding-left:0">
-							<%= image_tag("scream.png", class: 'specialties') %>
+							<%= link_to image_tag("scream.png", class: 'specialties'), root_path(anchor: 'illu') %>
 							<p>VISUAL<br>DESIGN</p>
 						</div>
 				</div>
@@ -67,10 +67,10 @@
 					<hr>
 				</div>
 				<div class=" findings2" style="margin-top:15px !important">
-					<p class="typical list2 space2 m-left">Published <strong><a href="https://uxdesign.cc/the-humanities-belong-in-tech-and-ux-dbe93170873f" > an article, "The Humanities Belong in Tech and UX" with uxdesign.cc</a></strong></p>
-					<p class="typical list2 space2 m-left"> Reduced the time for a company to 
-						<%= link_to "generate reports from a minimum 3 days to a 5 second average",main_case2_path %></p> 
-					<p class="typical list2 m-left">Created an artifact with insights from 5 different contextual interviews which was used in a succeeding design sprint for a product with an estimated worth of $4.5 mil in 1 year</p>
+					<p class="typical list2 space2 m-left">Published <a href="https://uxdesign.cc/the-humanities-belong-in-tech-and-ux-dbe93170873f" ><strong>an article, "The Humanities Belong in Tech and UX" with uxdesign.cc</a></strong></p>
+					<p class="typical list2 space2 m-left"> Launched a shoe shining service app with Vibelyst Inc in three sprints. 
+						<strong><%= link_to "Download the app here","https://itunes.apple.com/us/app/dappernyc/id1381468910?mt=8" %></strong></p> 
+					<p class="typical list2 m-left">Created a design artifact with insights from 5 different contextual interviews which was used in a succeeding design sprint for a product with an estimated worth of $4.5 mil in 1 year</p>
 				</div>
 		</div>
 	</div>
@@ -96,7 +96,25 @@
 <br class="hide-xs">
 <div class="portfolio">
 	<div class="row center">
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as" style="padding-left:0">
+				<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
+
+			<div class="card">
+ 
+				<%= link_to image_tag("dapper.jpg", class: 'card-img-top'), main_case9_path%>
+			 <div class="card-header">
+			   <h4><%= link_to "Dapper", main_case9_path %></h4>
+			    <p class="card-text" style ="font-style: italic"><%= "| interaction design | user research | app development" %></p>
+
+			 </div>
+			  <div class="card-block">
+			   
+			    <p class="card-text">With Vibelyst Inc, I management the development and design of Dapper, an app that get your shoes picked-up, shined, and delivered. It can be downloaded from the <a href="https://itunes.apple.com/us/app/dappernyc/id1381468910?mt=8"><strong>App Store</strong></a>.</p>
+			    	   
+			 		<%= link_to "See the Case Study", main_case9_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
+			  </div>	
+			</div>
+		</div>
+<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as" style="padding-left:0">
 			<div class="card">
 				<%= link_to image_tag("xo.jpg", class: 'card-img-top'),main_case8_path %> 
 			  <div class="card-header">
@@ -113,7 +131,7 @@
 
 			
 		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
+		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as ml-auto mr-auto  " style="padding-left:0">
 			<div class="card">
 				<%= link_to image_tag("affiliated.png", class: 'card-img-top'), main_case7_path%> 
 			  <div class="card-header">
@@ -131,47 +149,61 @@
 			  </div>	
 			</div>
 		</div>
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
 
-			<div class="card">
-
-				<%= link_to image_tag("aisis3.png", class: 'card-img-top'), main_case1_path%>
-			 <div class="card-header">
-			   <h4><%= link_to "AISIS Redesign", main_case1_path %></h4>
-			    <p class="card-text" style ="font-style: italic"><%= "| interaction design | user research |" %></p>
-
-			 </div>
-			  <div class="card-block">
-			   
-			    <p class="card-text"><%= "With my organization, User Experience Society, I researched how students felt about our alma mater's enlistment system. I made an article about it and also a design recommendation." %></p>
-			    	   
-			 		<%= link_to "See the Case Study", main_case1_path, class: "btn btn-primary orange btn-ghost", style: "margin-bottom: 0 !important"%>
-			  </div>	
-			</div>
-		</div>
-
-		<div class="col-xs-12  col-sm-6 col-md-6 col-lg-6 as " style="padding-left:0">
-			<div class="card">
-				<%= link_to image_tag("manly5.png", class: 'card-img-top'),  main_case2_path %> 
-			 <div class="card-header">
-			  	 <h4><%= link_to "Manly Plastics' CIMS", main_case2_path %></h4>
-
-			    <p class="card-text" style ="font-style: italic"><%= "| project management | lean ux  | interaction design | code |" %></p>
-			 </div>
-			  <div class="card-block">
-			   
-
-			    <p class="card-text"><%= "As my final requirement for my academics, I led a team of five to analyze, recreate and redesign the Customer Inquiry Management System of a plastics manufacturing corporation." %></p>
-			   
-			 		<%= link_to "See the Case Study", main_case2_path, class: "btn btn-primary orange btn-ghost",  style: "margin-bottom: 0 !important" %>
-			  </div>	
-			</div>
-		</div>
 
 
 	</div>	
 	</div>	
 </div>
+<div id="illu" style="width:1px; height:1px">
+</div>
+<div class="illustrations and branding" >
+	<div class="row" style=" margin-bottom:25px;">
+		<div class="line offset-sm-3 zad"  style="padding-left:0; margin-left:auto">
+				<hr>
+		</div>
+		<div class=" col-5 col-sm-4 col-md-4" style="padding:0">
+				<p class="header" ><%= 'illustrations and branding' %></p>
+		</div>
+		<div class="line zae" style=" margin-right: auto;">
+					<hr>
+		</div>
+	</div>
+	<div class="contaner">
+		<div class="row">
+			<div class="col-lg-4 col-sm-12 col-xs-12 ml-auto mr-auto">
+				<div class="item item-flex">
+				    <img src="/assets/waving woman-01.png" alt="" />
+				    <br>
+				    <img class="item-flex-img" src="/assets/gooey-01.png" alt="" />
+				  </div>
+				  <br>
+			</div>
+			<div class="col-lg-4 col-sm-12 col-xs-12 ml-auto mr-auto">
+				  <div class="item item-flex">
+				    <img class="item-flex-img-big" src="/assets/affiliated-20.png" alt="" />
+				    <br>
+				    <img class="item-flex-img" src="/assets/main.png" alt="" />
+				    <br>
+				  </div>
+			</div>
+			<div class="col-lg-4 col-sm-12 col-xs-12 ml-auto mr-auto">
+				 <div class="item item-flex">
+				 	  <img src="/assets/ahrt-01.png" alt="" />
+				 
+				   <br>
+				    <img class="item-flex-img-big" src="/assets/icons-26.png" alt="" />
+				   <br>
+				  </div>
+			</div>
+	  	</div>
+
+	
+	</div>
+	
+</div>
+<br class="hide-xs">	
+<br class="hide-xs">
 <div id="blogarticles" style="height:1px; width:1px;"></div>
 <div class="row" style=" margin-bottom:25px;">
 	<div class="line offset-sm-3 zad"  style="padding-left:0; margin-left:auto">

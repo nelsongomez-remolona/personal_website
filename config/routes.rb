@@ -13,9 +13,8 @@ Rails.application.routes.draw do
   get 'main/case7'
   get 'main/case8'
   get 'main/case9'
-
+  get 'main/case10'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :main
   root 'main#index'
 end
-

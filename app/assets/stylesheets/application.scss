@@ -17,11 +17,11 @@
 @import "zingchart";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i, 700i, 700i|Montserrat:400i,700|Droid+Serif:700i|Libre+Barcode+39+Text');
 @font-face {
-  font-family: 'Bodoni';    
+  font-family: 'Bodoni';
   src: url('/assets/BodoniDisplay-BoldItalic.otf') format('otf');
   font-weight: 700;
   font-style: italic;
-}	
+}
 /*IMPORTS END*/
 body
 {
@@ -57,7 +57,9 @@ body
 {
 	padding: 10px 12.5%;
 	background-color: white;
-	border-bottom: 1px dashed #95989A;
+  webkit-box-shadow: 0px 2px 5px 0px rgba(222,222,222,1);
+-moz-box-shadow: 0px 2px 5px 0px rgba(222,222,222,1);
+box-shadow: 0px 2px 5px 0px rgba(222,222,222,1);
 
 }
 .nav-link
@@ -133,12 +135,12 @@ body
 {
 	padding: 15px 30px !important;
 	border-radius: 15px;
-	font-size:18px !important;		
+	font-size:18px !important;
 }
 .btn{
 	font-size: 16px;
 	border-radius:10px;
-	padding: 10px 30px; 
+	padding: 10px 30px;
 }
 .btn-ghost
 {
@@ -155,7 +157,7 @@ body
 
 div.scrollmenu {
     background-color: white;
-		border-bottom: 1px dashed #95989A;	
+		border-bottom: 1px dashed #95989A;
     overflow: auto;
     white-space: nowrap;
 }
@@ -169,7 +171,9 @@ div.scrollmenu a {
 
 .footer
 {
-	border-top: 1px dashed #95989A;
+  webkit-box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
+-moz-box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
+box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
 }
 .fsub
 {
@@ -213,7 +217,7 @@ div.scrollmenu a {
 	.header
 	{
 		font-size: 18px;
-	}	
+	}
 	.pscreen
 	{
 		padding-left: 20px;
@@ -472,7 +476,7 @@ div.scrollmenu a {
 	{
 		margin-left:20px;
 	}
-	.btna 
+	.btna
 	{
 		margin-left:100px;
 	}
@@ -511,7 +515,7 @@ div.scrollmenu a {
 	display: flex !important;
 	margin-bottom: 0 !important;
 	}
-	.z .v 
+	.z .v
 	{
 		font-size: 40px !important ;
 	}
@@ -519,7 +523,7 @@ div.scrollmenu a {
 	{
 		font-size: 16px !important;
 	}
-	.card h4 
+	.card h4
 	{
 		font-size: 20px !important;
 	}
@@ -540,7 +544,7 @@ div.scrollmenu a {
 	{
 		margin-left:20px;
 	}
-	.btna 
+	.btna
 	{
 		margin-left:100px;
 	}
@@ -560,7 +564,7 @@ div.scrollmenu a {
 	{
 		margin-left:20px;
 	}
-	.btna 
+	.btna
 	{
 		margin-left:100px;
 	}
@@ -609,7 +613,7 @@ div.scrollmenu a {
 	.navbar-nav
 	{
 		flex-direction: row;
-		
+
 	}
 
 	.nav-link

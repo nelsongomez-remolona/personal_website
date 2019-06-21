@@ -29,22 +29,21 @@
      <%=  link_to image_tag("monogram2.png", class: 'logo'),  root_path, class: "navbar-brand" %>
 	  <ul class="navbar-nav mr-auto" style="padding-left: 20px;">
 	      <li class="nav-item ">
-	       <%=  link_to "about me", root_path(anchor: 'aboutme'), class: "nav-link" %>
+	       <%=  link_to "About Me", root_path(anchor: 'aboutme'), class: "nav-link" %>
 	      </li>
 	      <li class="nav-item">
-	          <%=  link_to "portfolio",  root_path(anchor: 'portfolio'), class: "nav-link" %>
+	          <%=  link_to "Portfolio",  root_path(anchor: 'portfolio'), class: "nav-link" %>
 	      </li>
         <li class="nav-item">
-            <%=  link_to "illustrations",  root_path(anchor: 'illu'), class: "nav-link" %>
+            <%=  link_to "Illustrations",  root_path(anchor: 'illu'), class: "nav-link" %>
         </li>
 	      <li class="nav-item">
-	          <%=  link_to "blog articles",  root_path(anchor: 'blogarticles'), class: "nav-link" %>
+	          <%=  link_to "Blog Articles",  root_path(anchor: 'blogarticles'), class: "nav-link" %>
 	      </li>
     </ul>
       <ul class="navbar-nav mr-auto right" style="margin-right:0 !important">
 	      <li class="nav-item ">
-          <a class="nav-item" href="mailto:nelsrgomez?subject=Inquiry"><b>get in touch</b></a>
-
+	 		        <%= link_to "Get In Touch", "mailto:nelsrgomez?subject=Inquiry"  , class: "btn btn-primary orange btn",  style: "margin-bottom: 0 !important" %>
 	      </li>
     </ul>
 	</nav>

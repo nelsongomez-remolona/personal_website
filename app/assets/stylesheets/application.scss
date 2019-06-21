@@ -15,10 +15,10 @@
 @import "main";
 @import "case2";
 @import "zingchart";
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i, 700i, 700i|Montserrat:400i,700|Droid+Serif:700i|Libre+Barcode+39+Text');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400i,700|Droid+Serif:700i|Libre+Barcode+39+Text');
 @font-face {
-  font-family: 'Bodoni';
-  src: url('/assets/BodoniDisplay-BoldItalic.otf') format('otf');
+  font-family: 'Avenir';
+  src: url('/assets/Avenir.ttc') format('otf');
   font-weight: 700;
   font-style: italic;
 }

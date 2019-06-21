@@ -34,58 +34,111 @@
 			<p class="typical list"><%= "Oberservational Research"  %></p>
       <p class="typical list"><%= "Contextual Interviews"  %></p>
 		</div>
-
+<br>
+<br>
+<div class="col-lg-12 col-6 col-md-12" style="padding-left:0	">
+	<%= link_to "Download the App", "https://itunes.apple.com/us/app/on-dibs/id1443446366", class: "btn btn-primary orange btn-ghost a" %>
+	<%= link_to "See the Website", "https://www.ondibs.com/", class: "btn btn-primary orange btn-ghost a space3" %>
+<%= link_to "Read Pitch Deck", "https://drive.google.com/file/d/1myxX9iEkNjyLaMjQ9q9P9YmCmNSsEge-/view?usp=sharing", class: "btn btn-primary orange btn-ghost a space3" %>
+ </div>
 </div>
-<div class="row">
-	<h3 class="big head"><%= "Context" %> </h3>
+<div class="row z">
+	<h3 class="big head"><%= "Dibs is All About Retention" %> </h3>
 </div>
 <div class=" row z">
-	<p class="typical"><%= "Dibs is a fitness and wellness startup that specializes
-	in retaining customers for businesses through microincentives (“Go 3x to bank $5 for your next purchase”).
-	It started out as a pure fitness booking platform (B2B) before slowly expanding into the consumer space through
-	wellness once we saw that being exclusively B2B wasn’t the right approach to become profitable."%>
+	<p class="typical"><%= "Dibs is the only booking platform on the business industry that focuses primarily on retention. We do this in different ways:"%>
 	</p>
-	<br>
-	<div class="col-lg-12 col-6 col-md-12" style="padding-left:0	">
-		<%= link_to "Download the App", "https://itunes.apple.com/us/app/on-dibs/id1443446366", class: "btn btn-primary orange btn-ghost a" %>
-		<%= link_to "See the Website", "https://www.ondibs.com/", class: "btn btn-primary orange btn-ghost a space3" %>
-	<%= link_to "Read Pitch Deck", "https://drive.google.com/file/d/1myxX9iEkNjyLaMjQ9q9P9YmCmNSsEge-/view?usp=sharing", class: "btn btn-primary orange btn-ghost a space3" %>
-	 </div>
+	<div class="col-12 findings  ">
+		<p class="typical list space">1.) We price classes dynamically. Think booking a flight.</p>
+		<p class="typical list space">2.) We provide incentives to high value customers to keep them coming back.</p>
+		<p class="typical list">3.) We provide reporting that digs deeper into customer behaviors and sales.</p>
+
+	</div>
+</div>
+<div class="row y">
+			<%= image_tag("dibs14.png", class: "erd-img") %>
 </div>
 
 <div class="row">
-	<h3 class="big head"><%= "Research and Discovery" %> </h3>
+<h3 class="big head"><%= "The Fitness Industry is Hyper-Competitive" %> </h3>
+</div>
+<div class="row y">
+			<%= image_tag("dibs91.png", class: "erd-img") %>
+</div>
+<div class=" row z">
+<p class="typical"><%= "Fitness is booming in so many different places. New fitness studios spanning from yoga places to spin classes are popping up left and right. With
+	so many options, customers are jumping from one studio to other studios, effectively lowering revenue for studios everywhere."%>
+</p>
+</div>
+<div class="row">
+<h3 class="big head"><%= "Studios Increase Price, Top Customers Leave" %> </h3>
+</div>
+<div class="row y">
+			<%= image_tag("dibs121.png", class: "erd-img") %>
+</div>
+<div class=" row z">
+<p class="typical"><%= "In response, fitness studios are increasing their price to cover for the decline, but because of it their top customers leave in search of better value. Studio owners try to further compensate by hyperfocusing on deep-discounting their offerings but that only really brings up revenue temporarily."%>
+</p>
+</div>
+<div class="row">
+<h3 class="big head"><%= "The Top 20% Drive Revenue" %> </h3>
+</div>
+<div class="row y">
+			<%= image_tag("dibs13.png", class: "erd-img") %>
+</div>
+<div class=" row z">
+<p class="typical"><%= "At Dibs, we found out early on while examining live data that it's actually the top 20% of customers that drive revenue, not new customers, effectively making deep discounting and price raises inappropriate tactics to gain back traction.  "%>
+</p>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Our Company's Problem" %> </h3>
+</div>
+<div class=" row z">
+<p class="typical">How might we get <b>more studio sales</b> when they’re so <b>focused on deep-discounts</b> and short-term wins on user acquisition instead of <b>our focus of retention?</b>
+</p>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Research" %> </h3>
 </div>
 <div class="row y">
 			<%= image_tag("dibs2.png", class: "wired-img") %>
 </div>
 <div class=" row " >
-	<p class="typical" style="margin-bottom:0"><%= "With our capital and runway getting smaller as the weeks come and go,
-		we had to adapt fast. We started out by figuring out what really was the core of our business and figuring out what
-		our users really cared about." %>
+	<p class="typical" style="margin-bottom:0">We started to think out of the box and looked into who are partner studios cared about: their clients. We interviewed  <b>20</b> of our studios’s existing <b>top 20% of users</b>, got to a few overarching personae, and got a couple of insights.
 	</p>
 	<br>
 </div>
+
 <div class=" row z">
-	<p class="typical" style="margin-bottom:0"><%= "We conducted user research by chatting with some of our existing
-		customers and reaching out to people we knew were lookalikes to our current customer set." %>
-	</p>
-	<br>
-</div>
-<div class=" row z">
-		<p class="typical" style="margin-bottom:0">  <strong><%= "Here are our takeaways:" %></strong></p>
+		<p class="typical" style="margin-bottom:0">  <strong><%= "Here are our takeaways on our persona, Emma:" %></strong></p>
 	<div class=" col-lg-11 col-sm-11 col-xs-12 findings">
-			<p class="typical list space m-left"><%= "1.) Our target market spent majority of their discretionary spending over wellness" %></p>
-			<p class="typical list  space m-left"><%= "2.) They didn't just focus on classes to keep fit. Fitness included eating healthy and wellness (spas, manicures, etc)."  %></p>
-			<p class="typical list  m-left"><%= "3.) They're price-conscious but also heavily brand sensistive. They wouldn't take a class from Groupon but would totally sign-up for an intro package for a place they favor."  %></p>
+			<p class="typical list space m-left">1.) Emma <b>doesn’t just focus on keeping fit</b> through classes. She <b>does a lot more</b> to keep well (salads, mani-pedis, coffees).</p>
+			<p class="typical list  space m-left">2.)Emma spent  <b>79% of her discretionary spending over wellness.</b></p>
+			<p class="typical list  m-left">3.) Emma is price-conscious but also heavily brand sensitive.</p>
 
 	</div>
 </div>
 <div class="row">
-	<h3 class="big head"><%= "Problem" %> </h3>
+	<h3 class="big head"><%= "Two-Fold Problem" %> </h3>
 </div>
 <div class=" row " >
-	<p class="typical" style="margin-bottom:0"><%= "With much of our user base spending most of their discretionary income on wellness, we thought, 'How might we help support their lifestyle and eventually monetize it?' given our situation as a company." %>
+	<p class="typical" style="margin-bottom:0"><%= "With much of our user base spending most of their discretionary income on wellness, this posed a two-pronged problem for us." %>
+	</p>
+	<br>
+</div>
+<div class="row">
+	<h3 class="mini head"><%= "Emma's Problem" %> </h3>
+</div>
+<div class=" row " >
+	<p class="typical" style="margin-bottom:0"><%= "How might we support the lifestyle of people interested in wellness when the spend they incur for their favorite wellness activities are unsustainable day-by-day?" %>
+	</p>
+	<br>
+</div>
+<div class="row">
+	<h3 class="mini head"><%= "Studios' Problem" %> </h3>
+</div>
+<div class=" row " >
+	<p class="typical" style="margin-bottom:0"><%= "How can we introduce to our partners that we help them get more customers while providing them proven retention strategies?" %>
 	</p>
 	<br>
 </div>
@@ -93,12 +146,68 @@
 	<h3 class="big head"><%= "Hypothesis" %> </h3>
 </div>
 <div class=" row " >
-	<p class="typical" style="margin-bottom:0"><%= "If we created a marketplace through an app, we can potentially capture transactions from a $4 billion industry (fitness and wellness) whilst helping our users afford and go to their favorite wellness brands more often. " %>
+	<p class="typical" style="margin-bottom:0">If we create a <b>cross-vertical marketplace</b> with micro-incentives in our app, we can help support the costs of wellness services for users and bring in new business for our partners in the wellness industry.
 	</p>
 	<br>
 </div>
 <div class="row">
-	<h3 class="big head"><%= "Our Master Plan" %> </h3>
+	<h3 class="big head"><%= "Discovery (Brainstorming)" %> </h3>
+</div>
+<div class=" row z">
+
+	<p class="typical" style="margin-bottom:0"> <%= "We got together as a team in front of a whiteboard. To get the best out of our brainstorming session, I suggested we..." %>
+	</p>
+	<div class=" col-lg-11 col-sm-11 col-xs-12 findings">
+			<p class="typical list space m-left">1.) <b>Split up and individually brainstormed</b> what would constitute as an ideal experience for our consumer marketplace.</p>
+			<p class="typical list  space m-left">2.) Did <b>lightning talks</b> (5mins per person).</p>
+			<p class="typical list  space m-left">3.) <b>Listed down the good ideas</b>  on post-its.</p>
+			<p class="typical list  space m-left">4.) <b>Voted on the best ideas</b> through stickers. </p>
+			<p class="typical list  m-left">5.) <b>Cut down to a MVP</b>  that would work.</p>
+
+	</div>
+</div>
+<div class="row">
+<h3 class="big head"><%= "Minimum Viable Product" %> </h3>
+</div>
+<div class=" row z">
+<p class="typical"><%= "After brainstorming and addressing some of the challenges that come up, this is the initial MVP we ended up with."%>
+</p>
+</div>
+<div class="row y">
+			<%= image_tag("dibs15.png", class: "erd-img") %>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Project Goals" %> </h3>
+</div>
+<div class=" row z">
+
+	<p class="typical" style="margin-bottom:0"> <%= "After having an MVP, we set ourselves some goals." %>
+	</p>
+	<div class=" col-lg-11 col-sm-11 col-xs-12 findings">
+			<p class="typical list space m-left">1.) Get at least a <b>1000 users</b> by the end of January.</p>
+			<p class="typical list  space m-left">2.) Maintain at least a <b>retention rate of 20% week-by-week.</b> </p>
+			<p class="typical list  m-left">3.) <b>Leverage data for sales</b> to the best performing brands. Learn about the LTV, potential return, and average spend per customer if they partner up with us.</p>
+
+
+	</div>
+</div>
+<div class="row">
+	<h3 class="big head"><%= "Sketching and Early Iterations" %> </h3>
+</div>
+<div class=" row z">
+
+	<p class="typical" style="margin-bottom:0"> <%= "After we had a clear understanding of goals, features, problem space, and Emma, we started sketching and continuously iterating on flow and form." %>
+	</p>
+</div>
+<div class="row y">
+			<%= image_tag("dibs16.png", class: "erd-img") %>
+</div>
+<div class="row y">
+			<%= image_tag("dibs17.png", class: "erd-img") %>
+</div>
+<div class="row">
+<div class="row">
+	<h3 class="big head"><%= "High Fidelity Mock-ups and User Flow" %> </h3>
 </div>
 <div class=" row z">
 
@@ -113,8 +222,11 @@
 	<br>
 	<br>
 </div>
+
+</div>
 <div class="row">
-	<h3 class="head"><%= "Future Integration" %> </h3>
+
+		<h3 class="head"><%= "Future Integration" %> </h3>
 </div>
 <div class=" row z">
 	<p class="typical" style="margin-bottom:0"><%= "Once we do have leverage and users, we plan to capture transactions and integrate with both fitness studios and other businesses. Here's a sample
@@ -146,10 +258,7 @@
 		<%= link_to "See Website", "https://ondibs.com/", class: "btn btn-primary orange btn-ghost a"%>
 	</div>
 </div>
-<div class="row y">
- <br>
- <br>
-</div>
+
 <div class="row">
 	<h3 class="head"><%= "Instagram, Identity Change, and Influencer Marketing " %> </h3>
 </div>

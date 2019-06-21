@@ -25,6 +25,7 @@ body.mobile {
 	margin: 30px auto;
 	border-radius: 15px;
 }
+
 .wire-img
 {
 	width:80%;
@@ -38,20 +39,20 @@ body.mobile {
 {
 	font-size: 18px;
 	line-height:40px;
-	font-family: 'Lato';
+	font-family: 'Avenir';
 	text-align: left !important;
 }
 .head
 {
 	font-size: 24px;
-	font-family: 'Montserrat';
+	font-family: 'Avenir';
 	font-weight: 700;
 	color: #5B5B5B;
 }
 .mini
 {
 	font-size:24px;
-	font-family: 'Lato';
+	font-family: 'Avenir';
 }
 .big
 {
@@ -63,7 +64,7 @@ body.mobile {
 	line-height:26px;
 	margin-bottom:0;
 	font-size: 18px !important	;
-
+	font-weight: 300 !important;
 }
 .list2
 {
@@ -140,6 +141,7 @@ body.mobile {
 	   {
 	   	font-size:16px !important;
 	   	line-height: 30px;
+			font-weight: 300 !important;
 
 	   }
 	   .title3
@@ -173,6 +175,10 @@ body.mobile {
 	   	margin-bottom:0;
 
 	   }
+		 .front-img
+		 {
+		 	height:250px !important;
+		 }
 	   .a
 	   {
 	   		margin-top: 5px;

@@ -192,6 +192,7 @@ box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
 	font-family: "Droid Serif";
 	font-weight: 500 !important;
 	font-size: 24px;
+  color: #5B5B5B;
 	text-align: center;
 }
 .resume {
@@ -362,7 +363,8 @@ box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
 	.socialmedia
 	{
 		padding-left: 0px;
-		height:21px;
+		height:32px !important;
+    width: 32px !important;
 		padding-right: 10px;
 	    display: inline-block;
 	    margin-left: auto;

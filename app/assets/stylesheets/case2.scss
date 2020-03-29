@@ -16,6 +16,12 @@
 	margin:0 10%;
 	border-radius: 15px;
 }
+.gif-img
+{
+	width:30%;
+	height:auto;
+	border-radius: 15px;
+}
 body.mobile {
     background: #0000 !important;
 }
@@ -121,6 +127,12 @@ body.mobile {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 		.btn{
 			margin-bottom: 30px !important;
+		}
+		.gif-img
+		{
+			width:80% !important;
+			height:auto;
+			border-radius: 15px;
 		}
 		.invision
 		{

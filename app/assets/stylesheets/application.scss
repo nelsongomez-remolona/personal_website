@@ -594,6 +594,9 @@ box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
 	.cover>.x{
 		margin:7.5% 30% 2.5% 30% !important;
 	}
+  .homecontainer >.x {
+    margin:7.5% 30% 2.5% 30% !important;
+  }
 		.aboutme {
     font-size: 20px;
     color: #5B5B5B !important;
@@ -607,8 +610,8 @@ box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
     margin-bottom: 25px;
     opacity: .8;
 	}.title2 {
-    font-size: 32px !important;
-    line-height: 48px !important;
+    font-size: 24px !important;
+    line-height: 36px !important;
 	}
 	.subtitle {
     font-size: 24px;

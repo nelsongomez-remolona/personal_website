@@ -591,8 +591,8 @@ box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
 /* Styles */
-	.x{
-		margin:7.5% 15% 2.5% 15% !important;
+	.cover>.x{
+		margin:7.5% 30% 2.5% 30% !important;
 	}
 		.aboutme {
     font-size: 20px;
@@ -608,6 +608,7 @@ box-shadow: 0px -2px 5px 0px rgba(222,222,222,1);
     opacity: .8;
 	}.title2 {
     font-size: 32px !important;
+    line-height: 48px !important;
 	}
 	.subtitle {
     font-size: 24px;

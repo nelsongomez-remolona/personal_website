@@ -1,0 +1,266 @@
+<!doctype html>
+<!--
+  CASE STUDY TEMPLATE
+  ===================
+  1. Copy this file to work/<project-slug>.html.
+  2. Replace every [BRACKETED] value. Search for "EDIT" to find each block.
+  3. Put images in assets/img/ (WebP, ≤1800px wide). Always set width/height to avoid layout shift.
+  4. Add the project to index.html: a .card in "Featured" and/or a row in the .index list.
+
+  BUILDING BLOCKS (all inside <div class="prose">):
+    <p class="lead">                     Large intro paragraph
+    <p> / <ol> / <ul>                    Body copy (max 64ch)
+    <h3>                                 Sub-heading within a chapter
+    <ol class="findings">                Numbered insights with accent counters
+    <figure class="figure wide">         Image spanning the full content column
+    <figure class="figure figure--pad">  Image on a tinted mat (screens, diagrams)
+    <div class="figure-pair wide">       Two images side by side
+    <figure class="pullquote wide">      Oversized serif quote
+    <div class="callout">                Tinted aside
+  Modifiers: .wide = full content column. Without it, blocks sit in the reading column.
+
+  MOTION ATTRIBUTES:
+    data-split          Word-by-word masked reveal (headings)
+    data-reveal         Fade/slide in on scroll. style="--d:.1s" staggers.
+    data-media-reveal   Clip-path wipe for images
+    data-parallax       Scroll-linked image drift (Chromium/Safari 26+)
+    data-count="15" data-prefix="+" data-suffix="%"   Count-up stat
+
+  Each chapter <section id="..."> must match a link in the .cs-toc list.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Project Name] — Nelson Gomez</title><!-- EDIT -->
+  <meta name="description" content="[One-sentence summary with the headline outcome.]"><!-- EDIT -->
+  <meta property="og:image" content="../assets/img/[cover].webp"><!-- EDIT -->
+  <meta name="robots" content="noindex"><!-- Remove on real case studies -->
+  <meta name="theme-color" content="#f1efe9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23121211'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' text-anchor='middle' fill='%23f1efe9'%3Eng%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
+  </script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="cs-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html" aria-label="Nelson Gomez, home">
+        <span class="brand-mark">ng</span><span>Nelson Gomez</span>
+      </a>
+      <div class="header-meta">
+        <span class="label">Case study</span>
+        <span class="label">SF <span data-clock="America/Los_Angeles">--:--</span></span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme"><span></span></button>
+        <a class="btn hide-sm" href="mailto:nelsrgomez@gmail.com?subject=Hello" data-magnetic="0.25">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======================= HERO — EDIT ======================= -->
+    <section class="cs-hero wrap">
+      <nav class="cs-crumbs label" aria-label="Breadcrumb">
+        <a href="../index.html#work">Work</a><span>/</span><span>[Client]</span><span>/</span><span aria-current="page">[Year]</span>
+      </nav>
+      <div class="grid">
+        <!-- Wrap one word in <em> for the italic accent. -->
+        <h1 class="display cs-title" data-split>[Project] <em>[Name]</em></h1>
+      </div>
+      <div class="grid cs-summary">
+        <p class="lead" data-reveal style="--d:.3s">
+          [Two lines: what you designed, for whom, and the shape of the outcome.]
+        </p>
+        <!-- Up to six meta pairs. Delete what you don't need. -->
+        <dl class="cs-meta" data-reveal style="--d:.45s">
+          <div><dt class="label">Role</dt><dd>[Role]</dd></div>
+          <div><dt class="label">Timeline</dt><dd>[Season Year]</dd></div>
+          <div><dt class="label">Platform</dt><dd>[iOS / Web]</dd></div>
+          <div><dt class="label">Team</dt><dd>[PM, 2 Eng, Design]</dd></div>
+          <div><dt class="label">Methods</dt><dd>[Methods]</dd></div>
+          <div><dt class="label">Live</dt><dd><a class="u" href="#">[Link] ↗</a></dd></div>
+        </dl>
+      </div>
+      <figure class="cs-cover" data-media-reveal data-parallax>
+        <img src="../assets/img/sketches.webp" alt="[Describe the cover image]" width="1800" height="1350" fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- ======================= OUTCOMES — EDIT (2–4 stats) ======================= -->
+    <section class="wrap" aria-label="Outcomes">
+      <div class="grid cs-stats">
+        <div class="stat" data-reveal>
+          <span class="label">[Metric]</span>
+          <!-- Text content is the no-JS fallback; keep it equal to the final value. -->
+          <span class="stat-num" data-count="24" data-prefix="+" data-suffix="%">+24%</span>
+          <p>[What moved, against what baseline.]</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.08s">
+          <span class="label">[Metric]</span>
+          <span class="stat-num" data-count="3.2" data-suffix="×">3.2×</span>
+          <p>[Context sentence.]</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.16s">
+          <span class="label">[Metric]</span>
+          <span class="stat-num" data-count="12" data-suffix="k">12k</span>
+          <p>[Context sentence.]</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.24s">
+          <span class="label">[Metric]</span>
+          <span class="stat-num" data-count="6" data-suffix=" wk">6 wk</span>
+          <p>[Context sentence.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= BODY ======================= -->
+    <div class="wrap">
+      <div class="grid cs-body">
+        <!-- TOC: one link per chapter id below. -->
+        <aside class="cs-toc" aria-label="On this page">
+          <span class="label">Contents</span>
+          <ol>
+            <li><a href="#context">Context</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#results">Results</a></li>
+          </ol>
+        </aside>
+
+        <article class="cs-content">
+          <!-- ---------- Chapter: Context — EDIT ---------- -->
+          <section class="chapter" id="context">
+            <header class="chapter-head">
+              <span class="label">01 — Context</span>
+              <h2 class="h2" data-split>[A headline that makes a <em>claim</em>.]</h2>
+            </header>
+            <div class="prose">
+              <p class="lead" data-reveal>[Lead paragraph: the product, the company, the moment.]</p>
+              <p data-reveal>[Body paragraph. Keep it short; let images do the work.]</p>
+              <figure class="figure wide" data-media-reveal>
+                <div class="figure-media"><img src="../assets/img/sketches.webp" alt="[Alt text]" width="1800" height="1350" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 01</span> [Caption.]</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter: Problem — EDIT ---------- -->
+          <section class="chapter" id="problem">
+            <header class="chapter-head">
+              <span class="label">02 — Problem</span>
+              <h2 class="h2" data-split>[What was <em>actually</em> wrong.]</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>[How you found out.]</p>
+              <ol class="findings">
+                <li data-reveal><div><strong>[Finding.]</strong> [Evidence.]</div></li>
+                <li data-reveal><div><strong>[Finding.]</strong> [Evidence.]</div></li>
+                <li data-reveal><div><strong>[Finding.]</strong> [Evidence.]</div></li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter: Process — EDIT ---------- -->
+          <section class="chapter" id="process">
+            <header class="chapter-head">
+              <span class="label">03 — Process</span>
+              <h2 class="h2" data-split>[How you <em>got there</em>.]</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>[Approach, constraints, trade-offs.]</p>
+              <div class="figure-pair wide" style="margin-block:clamp(32px,4vw,64px)">
+                <figure class="figure" style="margin:0" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/sketches.webp" alt="[Alt text]" width="1800" height="1350" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 02</span> [Caption.]</figcaption>
+                </figure>
+                <figure class="figure" style="margin:0;--d:.1s" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/sketches.webp" alt="[Alt text]" width="1800" height="1350" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 03</span> [Caption.]</figcaption>
+                </figure>
+              </div>
+              <div class="callout" data-reveal>
+                <span class="label">[Aside label]</span>
+                <p style="margin-top:12px">[A test, a constraint, or a decision worth calling out.]</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter: Solution — EDIT ---------- -->
+          <section class="chapter" id="solution">
+            <header class="chapter-head">
+              <span class="label">04 — Solution</span>
+              <h2 class="h2" data-split>[What <em>shipped</em>.]</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>[Describe the final design and the key decisions.]</p>
+              <figure class="pullquote wide" data-reveal>
+                <blockquote>“[A line from a user, stakeholder, or your own principle.]”</blockquote>
+                <figcaption class="label">[Attribution]</figcaption>
+              </figure>
+              <figure class="figure figure--pad wide" data-reveal>
+                <div class="figure-media"><img src="../assets/img/sketches.webp" alt="[Alt text]" width="1800" height="1350" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 04</span> [Caption.]</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter: Results — EDIT ---------- -->
+          <section class="chapter" id="results">
+            <header class="chapter-head">
+              <span class="label">05 — Results</span>
+              <h2 class="h2" data-split>[What changed, and <em>what’s next</em>.]</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>[How it was measured.]</p>
+              <h3 data-reveal>Learnings</h3>
+              <ol data-reveal>
+                <li>[Learning.]</li>
+                <li>[Learning.]</li>
+              </ol>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <!-- ======================= NEXT — EDIT ======================= -->
+    <a class="next-project wrap" href="animaze-onboarding.html">
+      <span class="label">Next project</span>
+      <span class="display" style="display:block" data-split>Animaze <em>Onboarding</em> →</span>
+    </a>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span class="label">( Contact )</span>
+    <a class="footer-cta" href="mailto:nelsrgomez@gmail.com?subject=Hello" style="margin-top:24px">
+      <span class="line" data-split>Let’s make</span>
+      <span class="line" data-split><em>something</em> <span class="arrow">↗</span></span>
+    </a>
+    <div class="grid footer-grid">
+      <div><span class="label">Email</span><a class="u" href="mailto:nelsrgomez@gmail.com">nelsrgomez@gmail.com</a></div>
+      <div><span class="label">Elsewhere</span><a class="u" href="https://www.linkedin.com/in/nelgomez/" rel="noopener">LinkedIn</a><a class="u" href="https://medium.com/@nelgomez" rel="noopener">Medium</a></div>
+      <div><span class="label">Pages</span><a class="u" href="../index.html#work">Work</a><a class="u" href="../about.html">About</a></div>
+      <div><span class="label">Local time</span><span>San Francisco, <span data-clock="America/Los_Angeles">--:--</span></span></div>
+    </div>
+    <div class="footer-base label">
+      <span>© <span data-year>2026</span> Nelson Gomez</span>
+      <a href="#main" class="link-arrow">Back to top <span class="arrow">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

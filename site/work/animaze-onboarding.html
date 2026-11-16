@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animaze Onboarding — Nelson Gomez</title>
+  <meta name="description" content="Designing a first-time experience for Animaze iOS that lifted day-1 retention and shares per DAU by 15%.">
+  <meta property="og:image" content="../assets/img/animaze-cover.webp">
+  <meta name="theme-color" content="#f1efe9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23121211'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' text-anchor='middle' fill='%23f1efe9'%3Eng%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
+  </script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="cs-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html" aria-label="Nelson Gomez, home">
+        <span class="brand-mark">ng</span><span>Nelson Gomez</span>
+      </a>
+      <div class="header-meta">
+        <span class="label">Case study</span>
+        <span class="label">SF <span data-clock="America/Los_Angeles">--:--</span></span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme"><span></span></button>
+        <a class="btn hide-sm" href="mailto:nelsrgomez@gmail.com?subject=Hello" data-magnetic="0.25">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======================= HERO ======================= -->
+    <section class="cs-hero wrap">
+      <nav class="cs-crumbs label" aria-label="Breadcrumb">
+        <a href="../index.html#work">Work</a><span>/</span><span>Holotech Studios</span><span>/</span><span aria-current="page">2020</span>
+      </nav>
+      <div class="grid">
+        <h1 class="display cs-title" data-split>Animaze <em>Onboarding</em></h1>
+      </div>
+      <div class="grid cs-summary">
+        <p class="lead" data-reveal style="--d:.3s">
+          Designing a first-time experience for a face-tracking avatar app — and running it through concept, split and A/B tests until the data picked a winner.
+        </p>
+        <dl class="cs-meta" data-reveal style="--d:.45s">
+          <div><dt class="label">Role</dt><dd>UX design, UX research</dd></div>
+          <div><dt class="label">Timeline</dt><dd>Spring 2020</dd></div>
+          <div><dt class="label">Platform</dt><dd>iOS</dd></div>
+          <div><dt class="label">Tools</dt><dd>Sketch, InVision, Zeplin, UserTesting</dd></div>
+          <div><dt class="label">Methods</dt><dd>Unmoderated tests, concept, split &amp; A/B tests</dd></div>
+          <div><dt class="label">Live</dt><dd><a class="u" href="https://apps.apple.com/us/app/animaze-avatar-by-facerig/id1466925554" rel="noopener">App Store ↗</a></dd></div>
+        </dl>
+      </div>
+      <figure class="cs-cover" data-media-reveal data-parallax>
+        <img src="../assets/img/animaze-cover.webp" alt="Animaze onboarding screens on several iPhones" width="960" height="598" fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- ======================= OUTCOMES ======================= -->
+    <section class="wrap" aria-label="Outcomes">
+      <div class="grid cs-stats">
+        <div class="stat" data-reveal>
+          <span class="label">Day-1 retention</span>
+          <span class="stat-num" data-count="15" data-prefix="+" data-suffix="%">+15%</span>
+          <p>Lift against control after shipping the avatar path.</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.08s">
+          <span class="label">Shares per DAU</span>
+          <span class="stat-num" data-count="15" data-prefix="+" data-suffix="%">+15%</span>
+          <p>Driven by the rewards system tied to sharing.</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.16s">
+          <span class="label">Avatar flow rating</span>
+          <span class="stat-num" data-count="4.6" data-suffix="/5">4.6/5</span>
+          <p>Helpfulness, versus 4.2 for the Discover flow.</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.24s">
+          <span class="label">Specs shipped</span>
+          <span class="stat-num" data-count="3">3</span>
+          <p>FTUE, Rewards and Tooltips, each through spec review and QA.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= BODY ======================= -->
+    <div class="wrap">
+      <div class="grid cs-body">
+        <aside class="cs-toc" aria-label="On this page">
+          <span class="label">Contents</span>
+          <ol>
+            <li><a href="#context">Context</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#hypotheses">Hypotheses</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#results">Results</a></li>
+          </ol>
+        </aside>
+
+        <article class="cs-content">
+          <!-- ---------- Chapter ---------- -->
+          <section class="chapter" id="context">
+            <header class="chapter-head">
+              <span class="label">01 — Context</span>
+              <h2 class="h2" data-split>An app for people into <em>memes</em> and streaming.</h2>
+            </header>
+            <div class="prose">
+              <p class="lead" data-reveal>Animaze is a mass-market app that uses face tracking to let people create entertaining videos and photos as 3D avatars.</p>
+              <p data-reveal>Once we had user-testing capability, we found our promoters were deeply into memes and online streaming — but struggled to find the confidence to do either. The avatar was the mask that made it possible.</p>
+              <figure class="figure figure--pad wide" data-reveal>
+                <div class="figure-media"><img src="../assets/img/animaze-persona.webp" alt="Persona card for Twitchy Taylor, an aspiring streamer" width="1212" height="705" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 01</span> Our primary persona: anonymous, meme-literate, building a small streaming community.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter ---------- -->
+          <section class="chapter" id="problem">
+            <header class="chapter-head">
+              <span class="label">02 — Problem</span>
+              <h2 class="h2" data-split>People liked it. They just <em>didn’t come back</em>.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>Before building anything, the team checks a feature against the roadmap and our existing qualitative and quantitative research. Three signals stood out.</p>
+              <ol class="findings">
+                <li data-reveal><div><strong>Features went unused.</strong> One feature that tested well as a concept was used only 20% of the time.</div></li>
+                <li data-reveal><div><strong>Day-1 retention lagged.</strong> Our last major release missed its retention targets despite shipping what users asked for.</div></li>
+                <li data-reveal><div><strong>Discover inspired creation.</strong> Users browsing our Instagram-style Discover feed were referencing it as inspiration for their own videos.</div></li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter ---------- -->
+          <section class="chapter" id="hypotheses">
+            <header class="chapter-head">
+              <span class="label">03 — Hypotheses</span>
+              <h2 class="h2" data-split>Three bets, <em>written down</em>.</h2>
+            </header>
+            <div class="prose">
+              <ol class="findings">
+                <li data-reveal><div><strong>Feature tour.</strong> A simple walk through the core feature set will raise day-1 retention because people understand how to use the app.</div></li>
+                <li data-reveal><div><strong>Discover path.</strong> Showing what others make will help people understand what’s possible — and make entertaining videos themselves.</div></li>
+                <li data-reveal><div><strong>Rewards.</strong> A simple milestone system will improve long-term retention and create a natural acquisition loop through sharing.</div></li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter ---------- -->
+          <section class="chapter" id="design">
+            <header class="chapter-head">
+              <span class="label">04 — Design</span>
+              <h2 class="h2" data-split>Inheriting a project <em>mid-flight</em>.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>We’d hired a contractor experienced in first-time experiences, but COVID-19 forced a pivot and the project landed with me. With tight timelines, I kept the contractor’s structure, built it into a high-fidelity prototype, gathered team feedback, and went straight to testing.</p>
+              <p data-reveal>In parallel I was deep in a rewards feature: share what you make, hit milestones, earn coins. We planned to weave it into onboarding.</p>
+
+              <div class="figure-pair wide" style="margin-block:clamp(32px,4vw,64px)">
+                <figure class="figure" style="margin:0" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/animaze-rewards.webp" alt="Rewards milestone screens" width="1701" height="1800" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 02</span> Rewards: milestone coins for sharing.</figcaption>
+                </figure>
+                <figure class="figure" style="margin:0;--d:.1s" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/animaze-spec.webp" alt="Annotated spec for the onboarding slideset" width="1494" height="1646" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 03</span> Spec excerpt for the onboarding slideset.</figcaption>
+                </figure>
+              </div>
+
+              <figure class="pullquote wide" data-reveal>
+                <blockquote>“Instead of a dynamic map, we shipped a counter and a static one. Engineering time is a design material.”</blockquote>
+                <figcaption class="label">On scoping the rewards revision</figcaption>
+              </figure>
+
+              <h3 data-reveal>A scalable tooltips system</h3>
+              <p data-reveal>Testers wanted to understand Animations and Backgrounds, so I designed event-triggered tooltips that could scale to any future feature without new onboarding work.</p>
+              <figure class="figure figure--pad wide" data-reveal>
+                <div class="figure-media"><img src="../assets/img/animaze-tooltips.webp" alt="Tooltips for backgrounds, voice effects and animations" width="866" height="608" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 04</span> Contextual tooltips, triggered by first use.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter ---------- -->
+          <section class="chapter" id="testing">
+            <header class="chapter-head">
+              <span class="label">05 — Testing</span>
+              <h2 class="h2" data-split>Qualitative first, then <em>at scale</em>.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>Ten unmoderated testers on UserTesting went through both the Avatar and Discover prototypes.</p>
+              <ol class="findings">
+                <li data-reveal><div><strong>Avatar flow won on helpfulness</strong> — 4.6 versus 4.2 out of 5.</div></li>
+                <li data-reveal><div><strong>But Discover created curiosity.</strong> Some testers who picked neither wanted to do both.</div></li>
+                <li data-reveal><div><strong>All ten found it helpful</strong>, yet Animations and Backgrounds remained unclear.</div></li>
+                <li data-reveal><div><strong>Rewards were misread.</strong> How shares earned rewards wasn’t landing visually.</div></li>
+              </ol>
+              <div class="callout" data-reveal>
+                <span class="label">Follow-up test</span>
+                <p style="margin-top:12px">I ran a concept test across three entry-point icons, then split-tested the winner against the original. The trophy won — it implied the user gets something, where the share icon read ambiguously.</p>
+              </div>
+              <p data-reveal>On the staging build, a second round of ten target users split again: the Avatar path produced a net-positive NPS, Discover a net-negative one — though Discover users made noticeably more entertaining videos.</p>
+            </div>
+          </section>
+
+          <!-- ---------- Chapter ---------- -->
+          <section class="chapter" id="results">
+            <header class="chapter-head">
+              <span class="label">06 — Results</span>
+              <h2 class="h2" data-split>Three shards, <em>one answer</em>.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>We bought installs through Facebook to reach significance and split users into control, Discover and Avatar shards.</p>
+              <figure class="figure figure--pad wide" data-reveal>
+                <div class="figure-media"><img src="../assets/img/animaze-retention.webp" alt="Retention curves by cohort age for the test shards" width="1280" height="720" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 05</span> Retention by cohort age across shards.</figcaption>
+              </figure>
+              <h3 data-reveal>Decisions</h3>
+              <ol data-reveal>
+                <li>Pushed all new users through the Avatar path in subsequent releases.</li>
+                <li>Began revising the FTUE after research showed TikTok creators were our most common user.</li>
+                <li>Explored how to introduce Discover videos without the net-negative first impression.</li>
+              </ol>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <!-- ======================= NEXT ======================= -->
+    <a class="next-project wrap" href="../about.html">
+      <span class="label">Next</span>
+      <span class="display" style="display:block" data-split>About <em>me</em> →</span>
+    </a>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span class="label">( Contact )</span>
+    <a class="footer-cta" href="mailto:nelsrgomez@gmail.com?subject=Hello" style="margin-top:24px">
+      <span class="line" data-split>Let’s make</span>
+      <span class="line" data-split><em>something</em> <span class="arrow">↗</span></span>
+    </a>
+    <div class="grid footer-grid">
+      <div><span class="label">Email</span><a class="u" href="mailto:nelsrgomez@gmail.com">nelsrgomez@gmail.com</a></div>
+      <div><span class="label">Elsewhere</span><a class="u" href="https://www.linkedin.com/in/nelgomez/" rel="noopener">LinkedIn</a><a class="u" href="https://medium.com/@nelgomez" rel="noopener">Medium</a></div>
+      <div><span class="label">Pages</span><a class="u" href="../index.html#work">Work</a><a class="u" href="../about.html">About</a></div>
+      <div><span class="label">Local time</span><span>San Francisco, <span data-clock="America/Los_Angeles">--:--</span></span></div>
+    </div>
+    <div class="footer-base label">
+      <span>© <span data-year>2026</span> Nelson Gomez</span>
+      <a href="#main" class="link-arrow">Back to top <span class="arrow">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

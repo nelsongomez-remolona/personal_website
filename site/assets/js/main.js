@@ -42,18 +42,22 @@
   /* ---------- split text into masked words ---------- */
   document.querySelectorAll("[data-split]").forEach((el) => {
     let i = 0;
+    let lastInner = null;
     const walk = (node) => {
       [...node.childNodes].forEach((child) => {
         if (child.nodeType === Node.TEXT_NODE) {
           const frag = document.createDocumentFragment();
-          child.textContent.split(/(\s+)/).forEach((part) => {
+          child.textContent.split(/(\s+)/).forEach((part, idx) => {
             if (!part) return;
+            // Punctuation glued to the previous word (e.g. after </em>) must not wrap on its own.
+            if (idx === 0 && lastInner && /^[.,;:!?’”)]+$/.test(part)) { lastInner.textContent += part; return; }
             if (/^\s+$/.test(part)) { frag.append(document.createTextNode(part)); return; }
             const w = document.createElement("span");
             w.className = "w";
             const inner = document.createElement("span");
             inner.textContent = part;
             inner.style.setProperty("--i", i++);
+            lastInner = inner;
             w.append(inner);
             frag.append(w);
           });

@@ -433,7 +433,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; text-wrap: balance; }
 .prose li { margin-bottom: 0.6em; }
 .prose li::marker { color: var(--muted); font-family: var(--mono); font-size: 0.8em; }
 @media (max-width: 760px) {
-  .chapter-head, .prose { grid-template-columns: 1fr; }
+  .chapter-head, .prose { grid-template-columns: minmax(0, 1fr); }
   .chapter-head > *, .prose > * { grid-column: 1 / -1 !important; }
   .chapter-head .label { padding: 0 0 12px; }
 }

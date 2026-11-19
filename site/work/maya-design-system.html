@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maya Design System — Nelson Gomez</title>
+  <meta name="description" content="Building Maya, Albert Invent's design system for scientific R&D software: 29 components, feature builds from 6 weeks to 2, and 80% of major modules migrated.">
+  <meta property="og:image" content="../assets/img/maya/02-after.webp">
+  <meta name="theme-color" content="#f1efe9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23121211'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' text-anchor='middle' fill='%23f1efe9'%3Eng%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Geist/Instrument Serif = site. Inter/Literata = Maya's own type, used only inside specimens. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=Literata:opsz,wght@7..72,400&display=swap">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/specimens.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (_) {}
+  </script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/specimens.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="cs-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html" aria-label="Nelson Gomez, home">
+        <span class="brand-mark">ng</span><span>Nelson Gomez</span>
+      </a>
+      <div class="header-meta">
+        <span class="label">Case study</span>
+        <span class="label">SF <span data-clock="America/Los_Angeles">--:--</span></span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme"><span></span></button>
+        <a class="btn hide-sm" href="mailto:nelsrgomez@gmail.com?subject=Hello" data-magnetic="0.25">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======================= HERO ======================= -->
+    <section class="cs-hero wrap">
+      <nav class="cs-crumbs label" aria-label="Breadcrumb">
+        <a href="../index.html#work">Work</a><span>/</span><span>Albert Invent</span><span>/</span><span aria-current="page">2024 — 25</span>
+      </nav>
+      <div class="grid">
+        <h1 class="display cs-title" data-split>Maya, a design system that <em>chose</em> less.</h1>
+      </div>
+      <div class="grid cs-summary">
+        <p class="lead" data-reveal style="--d:.3s">
+          As the only designer on a four-person systems team, I built Maya: the design system behind Albert Invent’s R&amp;D software for chemists. The turning point came when I made the components <em>less</em> flexible.
+        </p>
+        <dl class="cs-meta" data-reveal style="--d:.45s">
+          <div><dt class="label">Role</dt><dd>Design Systems Lead, sole designer</dd></div>
+          <!-- CONFIRM: résumé says Mar 2024 – Apr 2025; the hackathon (May 2025) and adoption figure (Nov 2025) fall after that. -->
+          <div><dt class="label">Timeline</dt><dd>2024 — 2025</dd></div>
+          <div><dt class="label">Team</dt><dd>1 design manager, 2 platform engineers</dd></div>
+          <div><dt class="label">Users</dt><dd>R&amp;D chemists at materials, consumer-goods and pharma companies</dd></div>
+          <div><dt class="label">Stack</dt><dd>Figma, micro-frontends, Font Awesome 6</dd></div>
+          <div><dt class="label">Scope</dt><dd>Tokens, 29 components, docs, governance, migration</dd></div>
+        </dl>
+      </div>
+
+      <figure class="spec" data-reveal style="margin-top:clamp(40px,6vw,96px)">
+        <div class="ba" aria-label="Before and after Maya. Drag to compare.">
+          <img src="../assets/img/maya/02-after.webp" alt="After: the unified Maya component library in Figma, organised by category" width="1800" height="893">
+          <img class="ba-before" src="../assets/img/maya/01-before.webp" alt="Before: ad-hoc components drawn from two libraries, with inconsistent styling" width="1800" height="786">
+          <div class="ba-handle"></div>
+          <span class="ba-tag l">Before</span><span class="ba-tag r">After Maya</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+        </div>
+        <figcaption><span class="label">Fig. 01</span> Drag to compare. Before, components came from two libraries configured differently for each product area. After, one library.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ======================= OUTCOMES ======================= -->
+    <!-- Each number has exactly one meaning on this page. -->
+    <section class="wrap" aria-label="Outcomes">
+      <div class="grid cs-stats">
+        <div class="stat" data-reveal>
+          <span class="label">Feature build time</span>
+          <span class="stat-num">6→2<small style="font-size:.4em"> wks</small></span>
+          <p>For features built from existing Maya components. Three times faster.</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.08s">
+          <span class="label">Major modules migrated</span>
+          <span class="stat-num" data-count="80" data-suffix="%">80%</span>
+          <p>Moved off the legacy libraries, one module at a time.</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.16s">
+          <span class="label">Components</span>
+          <span class="stat-num" data-count="29">29</span>
+          <p>Production-ready, from form controls and navigation to tables.</p>
+        </div>
+        <div class="stat" data-reveal style="--d:.24s">
+          <span class="label">Libraries replaced</span>
+          <span class="stat-num">3→1</span>
+          <p>Three legacy libraries consolidated into one system.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= BODY ======================= -->
+    <div class="wrap">
+      <div class="grid cs-body">
+        <aside class="cs-toc" aria-label="On this page">
+          <span class="label">Contents</span>
+          <ol>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#principles">Principles</a></li>
+            <li><a href="#foundations">Foundations</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#governance">Governance</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+          </ol>
+        </aside>
+
+        <article class="cs-content">
+          <!-- ---------- 01 Problem ---------- -->
+          <section class="chapter" id="problem">
+            <header class="chapter-head">
+              <span class="label">01 — Problem</span>
+              <h2 class="h2" data-split>Every feature was paying a <em>tax</em>.</h2>
+            </header>
+            <div class="prose">
+              <p class="lead" data-reveal>Albert Invent sells R&amp;D software to material-development companies. Its chemists work in dense, precise data. Before Maya, every new feature shipped more slowly than the last.</p>
+              <ol class="findings">
+                <li data-reveal><div><strong>Redundant code.</strong> Four third-party libraries produced duplicate classes and hard-to-trace bugs. Table features routinely slipped by two weeks.</div></li>
+                <li data-reveal><div><strong>Three legacy libraries.</strong> The system had to provide continuity with existing screens, not just consistency.</div></li>
+                <li data-reveal><div><strong>No shared vocabulary.</strong> One team’s “table” was another team’s “grid”, and every handoff paid for it.</div></li>
+                <li data-reveal><div><strong>Scientific density.</strong> Interfaces had to handle scale and precision without making accessibility worse.</div></li>
+              </ol>
+              <figure class="figure wide" data-reveal>
+                <div class="figure-media"><img src="../assets/img/maya/03-audit.webp" alt="Audit of existing dropdowns, menus and selectors across Albert's modules" width="1800" height="786" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 02</span> Part of the audit: the same selection pattern built many different ways across modules.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- 02 Principles ---------- -->
+          <section class="chapter" id="principles">
+            <header class="chapter-head">
+              <span class="label">02 — Principles</span>
+              <h2 class="h2" data-split>Five rules to say <em>no</em> with.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>Principles are only useful if they settle arguments, so I wrote these as filters for component requests.</p>
+              <ul class="goals wide">
+                <li data-reveal><strong>Predictable experiences</strong>Components look and behave the same way everywhere.</li>
+                <li data-reveal><strong>Intentional, not perfect</strong>Every component, pattern and variant has to meet a real need, current or emerging.</li>
+                <li data-reveal><strong>Radical simplicity</strong>Remove redundancy and unnecessary effort wherever possible.</li>
+                <li data-reveal><strong>Accessibility as a default</strong>Everything built with Maya meets WCAG AA.</li>
+                <li data-reveal><strong>Delight with insight</strong>Data-driven recommendations that push chemists toward the next experiment.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- ---------- 03 Foundations ---------- -->
+          <section class="chapter" id="foundations">
+            <header class="chapter-head">
+              <span class="label">03 — Foundations</span>
+              <h2 class="h2" data-split>Tokens named for <em>intent</em>, not appearance.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>I didn’t copy another system’s tokens. I started from Albert’s brand colours and built primitive shade ramps: cobalt for primary actions, slate for neutrals. Then I designed real screens <em>before</em> naming anything, so the names would reflect how tokens were actually used.</p>
+              <p data-reveal>The specimens below use Maya’s actual values, rendered live.</p>
+
+              <figure class="spec wide" data-reveal>
+                <div class="maya">
+                  <div class="spec-head"><span>Semantic colour → primitive</span><code>maya/tokens/color</code></div>
+                  <div class="spec-body">
+                    <div class="tok-group">
+                      <h4>Text</h4>
+                      <div class="tok-grid">
+                        <div class="tok"><div class="tok-swatch" style="--c:#1E1E29"></div><div class="tok-meta"><b>text</b><span>slate-10 · #1E1E29</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#4D5E80"></div><div class="tok-meta"><b>text-medium</b><span>slate-40 · #4D5E80</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#8091B3"></div><div class="tok-meta"><b>text-dim</b><span>slate-50 · #8091B3</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#0054B9"></div><div class="tok-meta"><b>text · primary</b><span>cobalt-60 · #0054B9</span></div></div>
+                      </div>
+                    </div>
+                    <div class="tok-group">
+                      <h4>Background</h4>
+                      <div class="tok-grid">
+                        <div class="tok"><div class="tok-swatch" style="--c:#FFFFFF"></div><div class="tok-meta"><b>background</b><span>slate-100 · #FFFFFF</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#FAFAFA"></div><div class="tok-meta"><b>background-dim</b><span>slate-99 · #FAFAFA</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#F0F2F6"></div><div class="tok-meta"><b>background-medium</b><span>slate-90 · #F0F2F6</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#081B37"></div><div class="tok-meta"><b>background-inverse</b><span>slate-15 · #081B37</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#0054B9"></div><div class="tok-meta"><b>background-strong · primary</b><span>cobalt-60 · #0054B9</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#D6E9FF"></div><div class="tok-meta"><b>background · primary</b><span>cobalt-95 · #D6E9FF</span></div></div>
+                      </div>
+                    </div>
+                    <div class="tok-group">
+                      <h4>Border &amp; state</h4>
+                      <div class="tok-grid">
+                        <div class="tok"><div class="tok-swatch" style="--c:#D3D9E5"></div><div class="tok-meta"><b>border / divider</b><span>slate-70 · #D3D9E5</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:#99C7FF"></div><div class="tok-meta"><b>border-dim · primary</b><span>cobalt-90 · #99C7FF</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:rgb(0 84 185 / .12)"></div><div class="tok-meta"><b>hover / focus</b><span>cobalt-60 · 12%</span></div></div>
+                        <div class="tok"><div class="tok-swatch" style="--c:rgb(0 84 185 / .2)"></div><div class="tok-meta"><b>selected / press</b><span>cobalt-60 · 20%</span></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption><span class="label">Spec. A</span> State tokens are opacity overlays on the base colour, so hover and press work on any surface without adding new colours.</figcaption>
+              </figure>
+
+              <figure class="spec wide" data-reveal>
+                <div class="maya">
+                  <div class="spec-head"><span>Type scale</span><code>maya/tokens/text</code></div>
+                  <div class="spec-body">
+                    <div class="type-row"><span class="sample" style="font:400 32px/48px var(--m-literata)">Paired headline, large</span><span class="meta">Literata 32/48</span></div>
+                    <div class="type-row"><span class="sample" style="font:400 24px/36px var(--m-literata)">Paired headline, small</span><span class="meta">Literata 24/36</span></div>
+                    <div class="type-row"><span class="sample" style="font:400 32px/40px var(--m-inter)">Headline large</span><span class="meta">Inter 400 32/40</span></div>
+                    <div class="type-row"><span class="sample" style="font:400 22px/28px var(--m-inter)">Title large</span><span class="meta">Inter 400 22/28</span></div>
+                    <div class="type-row"><span class="sample" style="font:500 14px/20px var(--m-inter);letter-spacing:.1px">Title small — Viscosity at 25 °C</span><span class="meta">Inter 500 14/20 · +0.1</span></div>
+                    <div class="type-row"><span class="sample" style="font:400 14px/20px var(--m-inter)">Body medium — 12.3456 g Combined solvent</span><span class="meta">Inter 400 14/20</span></div>
+                    <div class="type-row"><span class="sample" style="font:500 11px/16px var(--m-inter);letter-spacing:.25px">LABEL SMALL — PARAMETER GROUP</span><span class="meta">Inter 500 11/16 · +0.25</span></div>
+                  </div>
+                </div>
+                <figcaption><span class="label">Spec. B</span> Literata is used only for paired headlines. Everything chemists read in data uses Inter, chosen for its tabular figures.</figcaption>
+              </figure>
+
+              <figure class="spec wide" data-reveal>
+                <div class="maya">
+                  <div class="spec-head"><span>Radius &amp; space</span><code>maya/tokens/size</code></div>
+                  <div class="spec-body">
+                    <div class="scale">
+                      <div class="scale-item"><div class="radius-box" style="border-radius:2px"></div>radius-2</div>
+                      <div class="scale-item"><div class="radius-box" style="border-radius:4px"></div>radius-4</div>
+                      <div class="scale-item"><div class="radius-box" style="border-radius:8px"></div>radius-8</div>
+                      <div class="scale-item"><div class="radius-box" style="border-radius:999px"></div>radius-999</div>
+                    </div>
+                    <div class="scale" style="margin-top:28px">
+                      <div class="scale-item"><div class="space-bar" style="width:2px"></div>spacer-2</div>
+                      <div class="scale-item"><div class="space-bar" style="width:4px"></div>spacer-4</div>
+                      <div class="scale-item"><div class="space-bar" style="width:6px"></div>spacer-6</div>
+                      <div class="scale-item"><div class="space-bar" style="width:8px"></div>spacer-8</div>
+                      <div class="scale-item"><div class="space-bar" style="width:36px"></div>spacer-36</div>
+                      <div class="scale-item"><div class="space-bar" style="width:48px"></div>spacer-48</div>
+                      <div class="scale-item"><div class="space-bar" style="width:64px"></div>spacer-64</div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption><span class="label">Spec. C</span> Every token is named after its value, so a spec reads exactly like the code.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- 04 Architecture ---------- -->
+          <section class="chapter" id="architecture">
+            <header class="chapter-head">
+              <span class="label">04 — Architecture</span>
+              <h2 class="h2" data-split>The flexibility <em>trap</em>.</h2>
+            </header>
+            <div class="prose">
+              <p class="lead" data-reveal>Albert runs on micro-frontends, so every component has to work on its own. My first instinct was to make components endlessly configurable. That was a mistake.</p>
+              <p data-reveal>I built a slot model: a component defines a main slot plus optional leading and trailing slots, and each slot can swap its content (an icon, a chip, an input) without breaking the component’s look or behaviour. For buttons and chips, this worked well.</p>
+
+              <figure class="spec wide" data-reveal>
+                <div class="maya" data-playground>
+                  <div class="spec-head"><span>maya-button · try it</span><code>slot-layout</code></div>
+                  <div class="playground">
+                    <div class="pg-stage">
+                      <button class="maya-button" variant="outline" color="primary" size="sm" state="enabled" slot-layout="mainOnly"><span class="button__content">Confirm</span></button>
+                    </div>
+                    <div class="pg-controls">
+                      <div class="pg-row"><span>slot-layout</span><div class="seg">
+                        <button type="button" data-prop="slot-layout" data-value="mainOnly">mainOnly</button>
+                        <button type="button" data-prop="slot-layout" data-value="mainAndLeading">mainAndLeading</button>
+                        <button type="button" data-prop="slot-layout" data-value="mainAndTrailing">mainAndTrailing</button>
+                      </div></div>
+                      <div class="pg-row"><span>variant</span><div class="seg">
+                        <button type="button" data-prop="variant" data-value="filled">filled</button>
+                        <button type="button" data-prop="variant" data-value="outline">outline</button>
+                      </div></div>
+                      <div class="pg-row"><span>color</span><div class="seg">
+                        <button type="button" data-prop="color" data-value="primary">primary</button>
+                        <button type="button" data-prop="color" data-value="neutral">neutral</button>
+                      </div></div>
+                      <div class="pg-row"><span>size</span><div class="seg">
+                        <button type="button" data-prop="size" data-value="sm">sm</button>
+                        <button type="button" data-prop="size" data-value="md">md</button>
+                      </div></div>
+                      <div class="pg-row"><span>state</span><div class="seg">
+                        <button type="button" data-prop="state" data-value="enabled">enabled</button>
+                        <button type="button" data-prop="state" data-value="hovered">hovered</button>
+                        <button type="button" data-prop="state" data-value="focused">focused</button>
+                        <button type="button" data-prop="state" data-value="disabled">disabled</button>
+                      </div></div>
+                    </div>
+                    <pre class="pg-code">&lt;button class="maya-button" variant="outline" color="primary"
+        size="sm" state="enabled" slot-layout="mainOnly"&gt;
+  &lt;span class="button__content"&gt;Confirm&lt;/span&gt;
+&lt;/button&gt;</pre>
+                  </div>
+                </div>
+                <figcaption><span class="label">Spec. D</span> The Figma properties and the code attributes use the same names, so a designer’s choices map directly to markup.</figcaption>
+              </figure>
+
+              <p data-reveal>Then I applied the same model to the table cell, where chemists spend most of their time. I gave it every option: size, six slot layouts, states, five border toggles, and swappable content in every slot.</p>
+
+              <figure class="pullquote wide" data-reveal>
+                <blockquote>“We can’t build this cell component. It has too many permutations. Can we simplify somehow?”</blockquote>
+                <figcaption class="label">Adam Harris, Platform Lead</figcaption>
+              </figure>
+
+              <figure class="spec wide" data-reveal>
+                <div class="maya">
+                  <div class="spec-head"><span>Why engineering pushed back</span><code>counted from the component property panels</code></div>
+                  <div class="perm">
+                    <div>
+                      <h4>Configure every cell</h4>
+                      <div class="big">20,736+</div>
+                      <ul>
+                        <li>Size <b>3</b></li>
+                        <li>Slot layout <b>× 6</b></li>
+                        <li>State <b>× 3+</b></li>
+                        <li>Empty <b>× 2</b></li>
+                        <li>Border toggles <b>× 2⁵</b></li>
+                        <li>Content type, one slot <b>× 6</b></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4>Configure the column</h4>
+                      <div class="big good">12+</div>
+                      <ul>
+                        <li>Data type <b>2+</b></li>
+                        <li>Cell size <b>× 3</b></li>
+                        <li>Borders <b>× 2</b></li>
+                        <li>Cell layout, content, states <b>inherited</b></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <figcaption><span class="label">Spec. E</span> A lower bound: it counts one content slot and only the states that appear in the panel.</figcaption>
+              </figure>
+
+              <h3 data-reveal>The pivot: components at the column level</h3>
+              <p data-reveal>Instead of configuring cells, you configure a <code>dataColumn</code>. Choose the data type once, and every cell in that column inherits the right layout, content and states. The cell-level settings still exist but are hidden. That decision alone cut months from the table build.</p>
+
+              <figure class="spec wide" data-reveal>
+                <div class="maya" data-coltable>
+                  <div class="spec-head"><span>dataColumn · try it</span><code>one setting → every cell</code></div>
+                  <div class="pg-controls" style="border-bottom:1px solid var(--m-slate-80);grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+                    <div class="pg-row"><span>type</span><div class="seg">
+                      <button type="button" data-prop="type" data-value="text">text</button>
+                      <button type="button" data-prop="type" data-value="chips">chips</button>
+                      <button type="button" data-prop="type" data-value="avatarAndText">avatarAndText</button>
+                      <button type="button" data-prop="type" data-value="links">links</button>
+                    </div></div>
+                    <div class="pg-row"><span>cell size</span><div class="seg">
+                      <button type="button" data-prop="size" data-value="sm">sm</button>
+                      <button type="button" data-prop="size" data-value="md">md · 32px</button>
+                      <button type="button" data-prop="size" data-value="lg">lg</button>
+                    </div></div>
+                  </div>
+                  <div class="mtable-wrap">
+                    <table class="mtable" data-size="md">
+                      <thead><tr><th>ID</th><th>Material</th><th>Status</th></tr></thead>
+                      <tbody>
+                        <tr><td>A14581</td><td>Pigment Yellow 150</td><td><span class="chip">In progress</span></td></tr>
+                        <tr><td>A14582</td><td>Hexyl laurate</td><td><span class="chip neutral">Complete</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <figcaption><span class="label">Spec. F</span> Sample data. The designer chooses the column type, and the system handles everything inside the cells.</figcaption>
+              </figure>
+
+              <div class="figure-pair wide" style="margin-block:clamp(32px,4vw,64px)">
+                <figure class="figure" style="margin:0" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/maya/t-cell.webp" alt="table/dataColumn/cell component properties and its six slot layouts" width="1786" height="1056" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 03</span> Before: the cell exposes every option.</figcaption>
+                </figure>
+                <figure class="figure" style="margin:0;--d:.1s" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/maya/t-datacolumn.webp" alt="table/dataColumn component properties hiding nested cell instances" width="1786" height="1056" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 04</span> After: the column owns the decisions, and the cells inherit them.</figcaption>
+                </figure>
+              </div>
+
+              <figure class="figure wide" data-reveal>
+                <div class="figure-media"><img src="../assets/img/maya/22-table.webp" alt="Annotated Albert table showing views, filters, sort and grouping indicators, and display controls" width="1800" height="922" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 05</span> The shipped table: sorting, grouping and column controls built on the dataColumn model. See the tables case study for the full story.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- 05 Accessibility ---------- -->
+          <section class="chapter" id="accessibility">
+            <header class="chapter-head">
+              <span class="label">05 — Accessibility</span>
+              <h2 class="h2" data-split>Contrast is <em>measured</em>, not assumed.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>I checked every text token against every surface it could appear on, and designed a focus state for every interactive component from the start, so that reaching AAA later wouldn’t require a redesign.</p>
+
+              <figure class="spec wide" data-reveal>
+                <div class="maya">
+                  <div class="spec-head"><span>Text × surface contrast</span><code>WCAG 2.x · AA = 4.5:1 body, 3:1 large</code></div>
+                  <div class="mtable-wrap">
+                    <table class="contrast">
+                      <thead><tr><th scope="col">Token</th><th scope="col">background</th><th scope="col">background-dim</th><th scope="col">background-medium</th><th scope="col">cobalt-95</th></tr></thead>
+                      <tbody>
+                        <tr><th scope="row">text<span>#1E1E29</span></th>
+                          <td class="cell" style="--fg:#1E1E29;--bg:#FFFFFF"><b>16.50</b><span class="pass">AAA</span></td>
+                          <td class="cell" style="--fg:#1E1E29;--bg:#FAFAFA"><b>15.81</b><span class="pass">AAA</span></td>
+                          <td class="cell" style="--fg:#1E1E29;--bg:#F0F2F6"><b>14.72</b><span class="pass">AAA</span></td>
+                          <td class="cell" style="--fg:#1E1E29;--bg:#D6E9FF"><b>13.32</b><span class="pass">AAA</span></td></tr>
+                        <tr><th scope="row">text-medium<span>#4D5E80</span></th>
+                          <td class="cell" style="--fg:#4D5E80;--bg:#FFFFFF"><b>6.50</b><span class="pass">AA</span></td>
+                          <td class="cell" style="--fg:#4D5E80;--bg:#FAFAFA"><b>6.23</b><span class="pass">AA</span></td>
+                          <td class="cell" style="--fg:#4D5E80;--bg:#F0F2F6"><b>5.80</b><span class="pass">AA</span></td>
+                          <td class="cell" style="--fg:#4D5E80;--bg:#D6E9FF"><b>5.25</b><span class="pass">AA</span></td></tr>
+                        <tr><th scope="row">text · primary<span>#0054B9</span></th>
+                          <td class="cell" style="--fg:#0054B9;--bg:#FFFFFF"><b>7.07</b><span class="pass">AAA</span></td>
+                          <td class="cell" style="--fg:#0054B9;--bg:#FAFAFA"><b>6.78</b><span class="pass">AA</span></td>
+                          <td class="cell" style="--fg:#0054B9;--bg:#F0F2F6"><b>6.31</b><span class="pass">AA</span></td>
+                          <td class="cell" style="--fg:#0054B9;--bg:#D6E9FF"><b>5.71</b><span class="pass">AA</span></td></tr>
+                        <tr><th scope="row">text-dim<span>#8091B3</span></th>
+                          <td class="cell" style="--fg:#8091B3;--bg:#FFFFFF"><b>3.17</b><span class="fail">Large only</span></td>
+                          <td class="cell" style="--fg:#8091B3;--bg:#FAFAFA"><b>3.04</b><span class="fail">Large only</span></td>
+                          <td class="cell" style="--fg:#8091B3;--bg:#F0F2F6"><b>2.83</b><span class="fail">Fail</span></td>
+                          <td class="cell" style="--fg:#8091B3;--bg:#D6E9FF"><b>2.56</b><span class="fail">Fail</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <figcaption><span class="label">Spec. G</span> Ratios calculated from the token values. The <code>text-dim</code> row is the one I’d change; see Reflection.</figcaption>
+              </figure>
+
+              <figure class="figure wide" data-reveal>
+                <div class="figure-media"><img src="../assets/img/maya/14-focus.webp" alt="Focused, enabled and hovered states for buttons, chips, segmented buttons, search, text field, file upload and text area" width="1800" height="772" loading="lazy"></div>
+                <figcaption><span class="label">Fig. 06</span> Focus states designed alongside enabled and hover for every input component.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- 06 Governance ---------- -->
+          <section class="chapter" id="governance">
+            <header class="chapter-head">
+              <span class="label">06 — Governance &amp; rollout</span>
+              <h2 class="h2" data-split>A system is a <em>product</em> with users.</h2>
+            </header>
+            <div class="prose">
+              <p data-reveal>Maya’s users were the designers and engineers building Albert. I ran it like a product: requests were collected, filtered against the principles, tested internally, then released and migrated module by module.</p>
+              <ol class="lifecycle wide">
+                <li data-reveal><h4>Request</h4><p>Anyone could request a component or variant through a Notion form. It also showed us what people actually needed.</p></li>
+                <li data-reveal style="--d:.06s"><h4>Review</h4><p>Clear criteria for new components, to avoid bloat without ignoring real needs.</p></li>
+                <li data-reveal style="--d:.12s"><h4>Trial</h4><p>Engineers and designers tried components inside real features before wider release.</p></li>
+                <li data-reveal style="--d:.18s"><h4>Document</h4><p>Storybook-style docs showing how each component is used, and why.</p></li>
+                <li data-reveal style="--d:.24s"><h4>Migrate</h4><p>For every project, a clear call on legacy or Maya. Modules moved one at a time.</p></li>
+              </ol>
+              <p data-reveal>Weekly syncs with product and engineering were working sessions, not status updates. Module-specific templates carried the system into product briefs. A hackathon got teams building with Maya hands-on.</p>
+              <div class="figure-pair wide" style="margin-block:clamp(32px,4vw,64px)">
+                <figure class="figure" style="margin:0" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/maya/10-documenting.webp" alt="Documentation of filter behaviours written with engineering as components were built" width="1800" height="1307" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 07</span> Behaviour specs written with engineering while components were being built.</figcaption>
+                </figure>
+                <figure class="figure" style="margin:0;--d:.1s" data-reveal>
+                  <div class="figure-media"><img src="../assets/img/maya/20-code.webp" alt="maya-button markup showing variant, color, size, state and slot-layout attributes" width="1800" height="917" loading="lazy"></div>
+                  <figcaption><span class="label">Fig. 08</span> Figma names carried over to code, as in Spec. D.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <!-- ---------- 07 Impact ---------- -->
+          <section class="chapter" id="impact">
+            <header class="chapter-head">
+              <span class="label">07 — Impact</span>
+              <h2 class="h2" data-split>Weeks became <em>days</em>.</h2>
+            </header>
+            <div class="prose">
+              <ol class="findings">
+                <li data-reveal><div><strong>6 weeks → 2 weeks</strong> to build a feature from existing Maya components.</div></li>
+                <!-- CONFIRM: November 2025 date, given the résumé end date of April 2025. -->
+                <li data-reveal><div><strong>80% of major modules</strong> migrated to Maya by November 2025.</div></li>
+                <li data-reveal><div><strong>29 production components</strong> covering forms, navigation, data visualisation and tables, from one library instead of three.</div></li>
+                <li data-reveal><div><strong>Months saved on tables</strong> by moving configuration from the cell to the column. That table work went on to support three seven-figure enterprise deals.</div></li>
+              </ol>
+              <figure class="pullquote wide" data-reveal>
+                <blockquote>“What used to take us weeks to build now ships in days.”</blockquote>
+                <figcaption class="label">Neelesh Vikhairy, Head of Engineering</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- ---------- 08 Reflection ---------- -->
+          <section class="chapter" id="reflection">
+            <header class="chapter-head">
+              <span class="label">08 — Reflection</span>
+              <h2 class="h2" data-split>What I’d do <em>differently</em>.</h2>
+            </header>
+            <div class="prose">
+              <h3 data-reveal>Fewer options make for faster shipping</h3>
+              <p data-reveal>The most valuable thing I did was take options away. Now I start a component by asking which decisions the system should make for the designer, not how many it can offer.</p>
+              <h3 data-reveal>Fix <code>text-dim</code> at the token level</h3>
+              <p data-reveal>We limited <code>text-dim</code> to helper text, but helper text is still text, and at 3.17:1 it doesn’t meet AA. I’d darken it within the same slate hue, which keeps the visual hierarchy and passes on every neutral surface:</p>
+              <figure class="spec" data-reveal style="margin-block:24px">
+                <div class="maya">
+                  <div class="spec-body" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                    <div><div style="font:500 11px/16px var(--m-inter);color:#4D5E80;margin-bottom:6px">Field label</div><div style="border:1px solid #D3D9E5;border-radius:4px;padding:6px 10px;font:400 14px/20px var(--m-inter)">12.3456</div><div style="font:400 12px/16px var(--m-inter);color:#8091B3;margin-top:6px">Helper text · #8091B3 · 3.17:1</div></div>
+                    <div><div style="font:500 11px/16px var(--m-inter);color:#4D5E80;margin-bottom:6px">Field label</div><div style="border:1px solid #D3D9E5;border-radius:4px;padding:6px 10px;font:400 14px/20px var(--m-inter)">12.3456</div><div style="font:400 12px/16px var(--m-inter);color:#5A6E97;margin-top:6px">Helper text · #5A6E97 · 5.11:1</div></div>
+                  </div>
+                </div>
+              </figure>
+              <h3 data-reveal>Measure adoption from the beginning</h3>
+              <p data-reveal>We tracked migration by module. I’d also have tracked how often components were inserted or detached, from the first release, so we’d have had usage data rather than just migration counts.</p>
+            </div>
+          </section>
+
+          <!-- ---------- Credits ---------- -->
+          <section class="chapter" id="credits">
+            <header class="chapter-head">
+              <span class="label">Credits</span>
+              <h2 class="h3">Built with</h2>
+            </header>
+            <div class="prose">
+              <ol class="timeline wide" style="list-style:none;padding:0">
+                <li><span class="t-org" style="grid-column:1/7">Nelson Gomez</span><span class="t-role" style="grid-column:7/-1">Design Systems Lead</span></li>
+                <li><span class="t-org" style="grid-column:1/7">Adam Harris</span><span class="t-role" style="grid-column:7/-1">Platform Lead</span></li>
+                <li><span class="t-org" style="grid-column:1/7">Ityam Deshpande</span><span class="t-role" style="grid-column:7/-1">Design Manager</span></li>
+              </ol>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <!-- ======================= NEXT ======================= -->
+    <a class="next-project wrap" href="animaze-onboarding.html">
+      <span class="label">Next project</span>
+      <span class="display" style="display:block" data-split>Animaze <em>Onboarding</em> →</span>
+    </a>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span class="label">( Contact )</span>
+    <a class="footer-cta" href="mailto:nelsrgomez@gmail.com?subject=Hello" style="margin-top:24px">
+      <span class="line" data-split>Let’s make</span>
+      <span class="line" data-split><em>something</em> <span class="arrow">↗</span></span>
+    </a>
+    <div class="grid footer-grid">
+      <div><span class="label">Email</span><a class="u" href="mailto:nelsrgomez@gmail.com">nelsrgomez@gmail.com</a></div>
+      <div><span class="label">Elsewhere</span><a class="u" href="https://www.linkedin.com/in/nelgomez/" rel="noopener">LinkedIn</a><a class="u" href="https://medium.com/@nelgomez" rel="noopener">Medium</a></div>
+      <div><span class="label">Pages</span><a class="u" href="../index.html#work">Work</a><a class="u" href="../about.html">About</a></div>
+      <div><span class="label">Local time</span><span>San Francisco, <span data-clock="America/Los_Angeles">--:--</span></span></div>
+    </div>
+    <div class="footer-base label">
+      <span>© <span data-year>2026</span> Nelson Gomez</span>
+      <a href="#main" class="link-arrow">Back to top <span class="arrow">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
